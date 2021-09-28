@@ -1,0 +1,1479 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>RL强化学习 · Aiken's Blogs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="AikenHong">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Reward_is_enough.html" />
+    
+    
+    <link rel="prev" href="SS_OD_SoftTeacher.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Intro</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Algorithm 算法分析</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Algorithms/">
+            
+                <a href="../Algorithms/">
+            
+                    
+                    INTRO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Algorithms/Astar.html">
+            
+                <a href="../Algorithms/Astar.html">
+            
+                    
+                    Astar寻路算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Envs 环境配置</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    Devs 开发环境
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../Envs/SSH.html">
+            
+                <a href="../Envs/SSH.html">
+            
+                    
+                    C0:SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../Envs/GitGithub.html">
+            
+                <a href="../Envs/GitGithub.html">
+            
+                    
+                    C1:GitGithub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../Envs/Docker.html">
+            
+                <a href="../Envs/Docker.html">
+            
+                    
+                    C2:Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../Envs/GoogleColab.html">
+            
+                <a href="../Envs/GoogleColab.html">
+            
+                    
+                    C3:GoogleColab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../Envs/VSCode.html">
+            
+                <a href="../Envs/VSCode.html">
+            
+                    
+                    C4:VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../Experiment/MLFlow.html">
+            
+                <a href="../Experiment/MLFlow.html">
+            
+                    
+                    C5:MLFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    Notes 笔记环境
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../Envs/Gitbook.html">
+            
+                <a href="../Envs/Gitbook.html">
+            
+                    
+                    环境部署：Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../Envs/Vimtutor.html">
+            
+                <a href="../Envs/Vimtutor.html">
+            
+                    
+                    Chapter1：Vimtutor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../Envs/Spacevim.html">
+            
+                <a href="../Envs/Spacevim.html">
+            
+                    
+                    Chapter2：Spacevim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../Envs/Vimnote.html">
+            
+                <a href="../Envs/Vimnote.html">
+            
+                    
+                    Chapter3：Vimnote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../Envs/PicBed.html">
+            
+                <a href="../Envs/PicBed.html">
+            
+                    
+                    图床：PicBed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    Sys 系统环境
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../Envs/Linux.html">
+            
+                <a href="../Envs/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../Envs/Windows.html">
+            
+                <a href="../Envs/Windows.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Experiment 实验内容</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Experiment/NerualNetworkTraining.html">
+            
+                <a href="../Experiment/NerualNetworkTraining.html">
+            
+                    
+                    C1:NerualNetworkTraining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../Experiment/Hyper_Resolution.html">
+            
+                <a href="../Experiment/Hyper_Resolution.html">
+            
+                    
+                    C2:Hyper Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../Experiment/Survey_2019.html">
+            
+                <a href="../Experiment/Survey_2019.html">
+            
+                    
+                    C3:Survey2019
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../Experiment/Using_Judgment_Instead_of_Annotation.html">
+            
+                <a href="../Experiment/Using_Judgment_Instead_of_Annotation.html">
+            
+                    
+                    E1:Using Judgment Instead Of Annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../Experiment/UniversalFramework.html">
+            
+                <a href="../Experiment/UniversalFramework.html">
+            
+                    
+                    E2:UniversalFramework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" >
+            
+                <span>
+            
+                    
+                    Dataset 数据集
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../Datas/Emotion_dataset.html">
+            
+                <a href="../Datas/Emotion_dataset.html">
+            
+                    
+                    D1:Emotion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="../Datas/Facial expression and Emotion.html">
+            
+                <a href="../Datas/Facial expression and Emotion.html">
+            
+                    
+                    D2:Facial Expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="../Datas/FashionDataset.html">
+            
+                <a href="../Datas/FashionDataset.html">
+            
+                    
+                    D3:Fashion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="../Datas/ImageCaptionRequirement.html">
+            
+                <a href="../Datas/ImageCaptionRequirement.html">
+            
+                    
+                    D4:ImageCaption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Langs 语言</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Langs/Cpp.html">
+            
+                <a href="../Langs/Cpp.html">
+            
+                    
+                    Cpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    笔记语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../Langs/Markdown.html">
+            
+                <a href="../Langs/Markdown.html">
+            
+                    
+                    L1:Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../Langs/Latex.html">
+            
+                <a href="../Langs/Latex.html">
+            
+                    
+                    L2:Latex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    Python相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../Langs/Python.html">
+            
+                <a href="../Langs/Python.html">
+            
+                    
+                    L1:Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../Langs/Extensible_Markup_Language.html">
+            
+                <a href="../Langs/Extensible_Markup_Language.html">
+            
+                    
+                    L2:标记语言：Extensible Markup Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../Langs/PyTorch.html">
+            
+                <a href="../Langs/PyTorch.html">
+            
+                    
+                    L3:PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../Langs/PythonTips.html">
+            
+                <a href="../Langs/PythonTips.html">
+            
+                    
+                    L4:PythonTips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../Langs/Shell.html">
+            
+                <a href="../Langs/Shell.html">
+            
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Papers 论文阅读</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    Transformer
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="Attention.html">
+            
+                <a href="Attention.html">
+            
+                    
+                    P1:Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="Transformer.html">
+            
+                <a href="Transformer.html">
+            
+                    
+                    P2:Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="OpenWorldLearning.html">
+            
+                <a href="OpenWorldLearning.html">
+            
+                    
+                    OpenWorldLearning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="OpenMix.html">
+            
+                <a href="OpenMix.html">
+            
+                    
+                    P1:OpenMix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="OpenWorld_Object_Detector.html">
+            
+                <a href="OpenWorld_Object_Detector.html">
+            
+                    
+                    P2:OpenWorld Object Detector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="KnowledgeEvolution.html">
+            
+                <a href="KnowledgeEvolution.html">
+            
+                    
+                    P3:KnowledgeEvolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" >
+            
+                <span>
+            
+                    
+                    Backbone网路骨架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="EfficientNet.html">
+            
+                <a href="EfficientNet.html">
+            
+                    
+                    B1:EfficientNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="Involution.html">
+            
+                <a href="Involution.html">
+            
+                    
+                    B2:Involution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="Pooling.html">
+            
+                <a href="Pooling.html">
+            
+                    
+                    B3:Pooling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.4" data-path="../Algorithms/HardTask.html">
+            
+                <a href="../Algorithms/HardTask.html">
+            
+                    
+                    B4:HardTask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Causal Analysis.html">
+            
+                <a href="Causal Analysis.html">
+            
+                    
+                    Causal Analysis 因果分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="GANs.html">
+            
+                <a href="GANs.html">
+            
+                    
+                    GANs 生成对抗网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" >
+            
+                <span>
+            
+                    
+                    WeakSupervised
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.6.1" data-path="MoCo_V3.html">
+            
+                <a href="MoCo_V3.html">
+            
+                    
+                    P1:MoCo V3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6.2" data-path="FSL.html">
+            
+                <a href="FSL.html">
+            
+                    
+                    P2:FSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6.3" data-path="FSL0.html">
+            
+                <a href="FSL0.html">
+            
+                    
+                    P3:FSL0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6.4" data-path="SS_OD_SoftTeacher.html">
+            
+                <a href="SS_OD_SoftTeacher.html">
+            
+                    
+                    P4:SS OD SoftTeacher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.7" data-path="RL.html">
+            
+                <a href="RL.html">
+            
+                    
+                    RL强化学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7.1" data-path="Reward_is_enough.html">
+            
+                <a href="Reward_is_enough.html">
+            
+                    
+                    P1:Reward Is Enough
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2" data-path="DouZero.html">
+            
+                <a href="DouZero.html">
+            
+                    
+                    P2:DouZero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.3" data-path="MobaAI_Tencent.html">
+            
+                <a href="MobaAI_Tencent.html">
+            
+                    
+                    P3:MobaAI Tencent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" >
+            
+                <span>
+            
+                    
+                    其他调研
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.8.1" data-path="NIPS中国预讲会.html">
+            
+                <a href="NIPS中国预讲会.html">
+            
+                    
+                    NIPS中国预讲会
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >RL强化学习</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#&#x5F3A;&#x5316;&#x5B66;&#x4E60;"><b>1. </b>&#x5F3A;&#x5316;&#x5B66;&#x4E60;</a></li><li><span class="title-icon "></span><a href="#chapter1-&#x6A21;&#x578B;&#x57FA;&#x7840;"><b>2. </b>Chapter1 &#x6A21;&#x578B;&#x57FA;&#x7840;</a></li><ul><li><span class="title-icon "></span><a href="#theory&#x7406;&#x8BBA;&#x57FA;&#x7840;"><b>2.1. </b>Theory&#x7406;&#x8BBA;&#x57FA;&#x7840;</a></li></ul><li><span class="title-icon "></span><a href="#chapter2-&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#xFF08;mdp&#xFF09;"><b>3. </b>Chapter2 &#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#xFF08;MDP&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x7B80;&#x5316;"><b>3.1. </b>&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x7B80;&#x5316;</a></li><li><span class="title-icon "></span><a href="#mdp&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;"><b>3.2. </b>MDP&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;"><b>3.3. </b>&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;</a></li><li><span class="title-icon "></span><a href="#&#x6700;&#x4F18;&#x4EF7;&#x503C;&#x51FD;&#x6570;"><b>3.4. </b>&#x6700;&#x4F18;&#x4EF7;&#x503C;&#x51FD;&#x6570;</a></li></ul><li><span class="title-icon "></span><a href="#chapter3-&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF08;dp&#xFF09;&#x6C42;&#x89E3;"><b>4. </b>Chapter3 &#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF08;DP&#xFF09;&#x6C42;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;"><b>4.1. </b>&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;"><b>4.2. </b>&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x4EF7;&#x503C;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;"><b>4.3. </b>&#x4EF7;&#x503C;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;"><b>4.4. </b>&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;</a></li></ul><li><span class="title-icon "></span><a href="#chapter-4-&#x7528;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x6C42;&#x89E3;"><b>5. </b>Chapter 4 &#x7528;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x6C42;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#monto-calo-&#x6C42;&#x89E3;"><b>5.1. </b>Monto-Calo &#x6C42;&#x89E3;</a></li><li><span class="title-icon "></span><a href="#mc&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF09;"><b>5.2. </b>MC&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF09;</a></li><li><span class="title-icon "></span><a href="#mc&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#xFF09;"><b>5.3. </b>MC&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#xFF09;</a></li></ul><li><span class="title-icon "></span><a href="#chapter5-&#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF08;td&#xFF09;&#x6C42;&#x89E3;"><b>6. </b>Chapter5 &#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF08;TD&#xFF09;&#x6C42;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#td&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x6C42;&#x89E3;"><b>6.1. </b>TD&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x6C42;&#x89E3;</a></li><li><span class="title-icon "></span><a href="#n&#x6B65;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;"><b>6.2. </b>n&#x6B65;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;</a></li><li><span class="title-icon "></span><a href="#td&#xFF08;lambda&#xFF09;"><b>6.3. </b>TD&#xFF08;$\lambda$&#xFF09;</a></li><li><span class="title-icon "></span><a href="#td&#x63A7;&#x5236;&#x95EE;&#x9898;&#x6C42;&#x89E3;"><b>6.4. </b>TD&#x63A7;&#x5236;&#x95EE;&#x9898;&#x6C42;&#x89E3;</a></li></ul></ul></div><a href="#&#x5F3A;&#x5316;&#x5B66;&#x4E60;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5F3A;&#x5316;&#x5B66;&#x4E60;"><a name="&#x5F3A;&#x5316;&#x5B66;&#x4E60;" class="anchor-navigation-ex-anchor" href="#&#x5F3A;&#x5316;&#x5B66;&#x4E60;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5F3A;&#x5316;&#x5B66;&#x4E60;</h1>
+<p>Created by: Aiken H
+Detail: survey
+Finished?: No
+Tags: Paper
+URL1: <a href="https://www.cnblogs.com/pinard/category/1254674.html" target="_blank">https://www.cnblogs.com/pinard/category/1254674.html</a>
+URL2: <a href="https://github.com/ljpzzz/machinelearning" target="_blank">https://github.com/ljpzzz/machinelearning</a>
+URL3: <a href="https://datawhalechina.github.io/easy-rl/#/" target="_blank">https://datawhalechina.github.io/easy-rl/#/</a></p>
+<h1 id="chapter1-&#x6A21;&#x578B;&#x57FA;&#x7840;"><a name="chapter1-&#x6A21;&#x578B;&#x57FA;&#x7840;" class="anchor-navigation-ex-anchor" href="#chapter1-&#x6A21;&#x578B;&#x57FA;&#x7840;"><i class="fa fa-link" aria-hidden="true"></i></a>2. Chapter1 &#x6A21;&#x578B;&#x57FA;&#x7840;</h1>
+<p><a href="https://www.cnblogs.com/pinard/p/9385570.html" target="_blank">&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF08;&#x4E00;&#xFF09;&#x6A21;&#x578B;&#x57FA;&#x7840;</a></p>
+<p>&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x662F;&#x4ECB;&#x4E8E;&#x76D1;&#x7763;&#x548C;&#x65E0;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x4E4B;&#x95F4;&#x7684;&#xFF0C;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x6CA1;&#x6709;&#x8F93;&#x51FA;&#x503C;&#xFF0C;&#x4F46;&#x662F;&#x6709;<strong>reward&#xFF1A;</strong> &#x540C;&#x65F6;&#x8FD9;&#x4E2A;reward&#x662F;&#x4E8B;&#x540E;&#x7ED9;&#x51FA;&#x7684;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x53CA;&#x65F6;&#x56DE;&#x9988;&#x7684;&#x3002;&#x800C;&#x65E0;&#x76D1;&#x7763;&#x5B66;&#x4E60;&#x662F;&#x53EA;&#x6709;&#x6570;&#x636E;&#x7279;&#x5F81;&#xFF0C;&#x540C;&#x65F6;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x6CA1;&#x6709;&#x524D;&#x540E;&#x4F9D;&#x8D56;&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<p><img src="https://gitee.com/Aiken97/markdown-image/raw/master/img/20210911210000.png" alt="https://images2018.cnblogs.com/blog/1042406/201807/1042406-20180729163058011-290427357.png"></p>
+<h2 id="theory&#x7406;&#x8BBA;&#x57FA;&#x7840;"><a name="theory&#x7406;&#x8BBA;&#x57FA;&#x7840;" class="anchor-navigation-ex-anchor" href="#theory&#x7406;&#x8BBA;&#x57FA;&#x7840;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Theory&#x7406;&#x8BBA;&#x57FA;&#x7840;</h2>
+<ul>
+<li><p>&#x7B80;&#x5316;&#x6A21;&#x578B;&#x4ECB;&#x7ECD;&#xFF1A;</p>
+<p>  &#x4E0A;&#x9762;&#x7684;&#x5927;&#x8111;&#x4EE3;&#x8868;&#x6211;&#x4EEC;&#x7684;&#x7B97;&#x6CD5;&#x6267;&#x884C;&#x4E2A;&#x4F53;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x64CD;&#x4F5C;&#x4E2A;&#x4F53;&#x6765;&#x505A;&#x51B3;&#x7B56;&#xFF0C;&#x5373;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x52A8;&#x4F5C;&#xFF08;Action&#xFF09;At&#x3002;&#x4E0B;&#x9762;&#x7684;&#x5730;&#x7403;&#x4EE3;&#x8868;&#x6211;&#x4EEC;&#x8981;&#x7814;&#x7A76;&#x7684;&#x73AF;&#x5883;,&#x5B83;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x72B6;&#x6001;&#x6A21;&#x578B;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x4E86;&#x52A8;&#x4F5C;At&#x540E;&#xFF0C;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;(State)&#x4F1A;&#x53D8;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x53D1;&#x73B0;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x5DF2;&#x7ECF;&#x53D8;&#x4E3A;St+1,&#x540C;&#x65F6;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x4E86;&#x6211;&#x4EEC;&#x91C7;&#x53D6;&#x52A8;&#x4F5C;At&#x7684;&#x5EF6;&#x65F6;&#x5956;&#x52B1;(Reward)Rt+1&#x3002;&#x7136;&#x540E;&#x4E2A;&#x4F53;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x9009;&#x62E9;&#x4E0B;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x53C8;&#x4F1A;&#x53D8;&#xFF0C;&#x53C8;&#x6709;&#x65B0;&#x7684;&#x5956;&#x52B1;&#x503C;&#x3002;&#x3002;&#x3002;&#x8FD9;&#x5C31;&#x662F;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7684;&#x601D;&#x8DEF;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7684;&#x6A21;&#x578B;&#x5173;&#x952E;&#x8981;&#x7D20;&#xFF1A;</p>
+<ol>
+<li>&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;S&#xFF1A;t&#x65F6;&#x523B;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;$S_t$&#x662F;&#x5B83;&#x73AF;&#x5883;&#x72B6;&#x6001;&#x96C6;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x72B6;&#x6001;</li>
+<li>&#x4E2A;&#x4F53;&#x7684;&#x52A8;&#x4F5C;A&#xFF1A;&#x4E2A;&#x4F53;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x523B;&#x53EF;&#x80FD;&#x505A;&#x51FA;&#x7684;&#x52A8;&#x4F5C;&#x96C6;&#x5408;</li>
+<li>&#x73AF;&#x5883;&#x7684;&#x5956;&#x52B1;R&#xFF1A;&#x4E2A;&#x4F53;&#x5728;&#x67D0;&#x4E2A;&#x65F6;&#x523B;&#x5BF9;&#x5E94;&#x72B6;&#x6001;&#x4E0B;&#x505A;&#x51FA;&#x7684;&#x52A8;&#x4F5C;$A_t$&#x5F97;&#x5230;&#x7684;&#x5956;&#x52B1;&#x4F1A;&#x5728;t+1&#x65F6;&#x523B;&#x5F97;&#x5230;</li>
+<li><p>&#x4E2A;&#x4F53;&#x7684;&#x7B56;&#x7565;$\pi$&#xFF1A;&#x4E2A;&#x4F53;&#x6839;&#x636E;&#x5F53;&#x524D;&#x7684;&#x73AF;&#x5883;&#x9009;&#x62E9;&#x91C7;&#x53D6;&#x52A8;&#x4F5C;&#x7684;&#x7B56;&#x7565;&#x5206;&#x5E03;&#xFF08;&#x51FD;&#x6570;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x6982;&#x7387;&#x5206;&#x5E03;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6982;&#x7387;&#x5927;&#x7684;&#x52A8;&#x4F5C;&#x88AB;&#x4E2A;&#x4F53;&#x9009;&#x62E9;&#x7684;&#x6982;&#x7387;&#x663E;&#x7136;&#x66F4;&#x9AD8;</p>
+<p> <script type="math/tex; ">\pi(a|s)= P(A_t = a | S_t = s)</script></p>
+</li>
+<li><p>&#x5728;&#x7B56;&#x7565;$\pi$&#x548C;&#x72B6;&#x6001;s&#x91C7;&#x884C;&#x52A8;&#x540E;&#x7684;&#x4EF7;&#x503C;$v_\pi(s)$&#xFF1A;&#x4E00;&#x822C;&#x662F;&#x4E00;&#x4E2A;&#x671F;&#x671B;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x6BCF;&#x6B21;&#x53EA;&#x80FD;&#x9009;&#x62E9;&#x5F53;&#x524D;&#x7684;reward&#x6700;&#x5927;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x800C;&#x662F;&#x9700;&#x8981;&#x8003;&#x8651;&#x5927;&#x5C40;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x7EFC;&#x5408;&#x7684;&#xFF08;&#x5F53;&#x524D;&#x548C;&#x540E;&#x7EED;&#xFF09;&#x7684;&#x5EF6;&#x65F6;&#x5956;&#x52B1;&#x3002;</p>
+<p> <script type="math/tex; ">v_\pi(s) = \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \gamma ^2 R_{t+3} + ... |S_t = s)</script></p>
+</li>
+<li><p>&#x5956;&#x52B1;&#x8870;&#x51CF;&#x56E0;&#x5B50;$\gamma$&#xFF1A;&#x4E5F;&#x5C31;&#x662F;&#x4E0A;&#x5F0F;&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x6781;&#x7AEF;&#x503C;&#x8003;&#x8651;&#x8D2A;&#x5A6A;&#x548C;&#x4E00;&#x81F4;&#x7B49;&#x540C;&#xFF0C;&#x8303;&#x56F4;&#x5728;[0,1]</p>
+</li>
+<li>&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x6A21;&#x578B;&#xFF1A;&#x4E5F;&#x5C31;&#x662F;&#x73AF;&#x5883;&#x4ECE;s&#x7ECF;&#x8FC7;a&#x540E;&#x8F6C;&#x5316;&#x4E0B;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x72B6;&#x6001;&#x673A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;&#x6982;&#x7387;&#x6A21;&#x578B;$P_{ss^&#x2018;}^a$ (s&#x2192;s&apos; , a)</li>
+<li>&#x63A2;&#x7D22;&#x7387;$\epsilon$&#xFF1A;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x8BAD;&#x7EC3;&#x8FED;&#x4EE3;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x9009;&#x62E9;&#x5F53;&#x524D;&#x4EF7;&#x503C;&#x6700;&#x5927;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x641C;&#x7D22;&#x7A7A;&#x95F4;&#x7684;&#x5B8C;&#x5907;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x7528;$\epsilon$&#x7684;&#x6982;&#x7387;&#x53BB;&#x9009;&#x62E9;&#x975E;&#x6700;&#x5927;&#x4EF7;&#x503C;&#x7684;&#x52A8;&#x4F5C;&#xFF0C;&#x6765;&#x63D0;&#x5347;&#x8BAD;&#x7EC3;&#x7684;&#x9C81;&#x68D2;&#x6027;</li>
+</ol>
+<p><strong>SUMMARY&#xFF1A;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x4E86;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x6A21;&#x578B;&#x7684;workflow&#x4EE5;&#x53CA;&#x5176;&#x4E2D;&#x9700;&#x8981;&#x8003;&#x8651;&#x7684;8&#x4E2A;&#x4E3B;&#x8981;&#x53C2;&#x6570;&#x548C;&#x51FD;&#x6570;&#x67B6;&#x6784;&#x3002;&#x6700;&#x4E3B;&#x8981;&#x7684;&#x673A;&#x5236;&#x8FD8;&#x662F;Policy&#x548C;reward&#x8BBE;&#x8BA1;&#x8FD9;&#x4E00;&#x5757;</strong></p>
+<h1 id="chapter2-&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#xFF08;mdp&#xFF09;"><a name="chapter2-&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#xFF08;mdp&#xFF09;" class="anchor-navigation-ex-anchor" href="#chapter2-&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#xFF08;mdp&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Chapter2 &#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;&#xFF08;MDP&#xFF09;</h1>
+<p><a href="https://www.cnblogs.com/pinard/p/9426283.html" target="_blank">&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF08;&#x4E8C;&#xFF09;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x51B3;&#x7B56;&#x8FC7;&#x7A0B;(MDP)</a></p>
+<p><a href="https://datawhalechina.github.io/easy-rl/#/chapter2/chapter2" target="_blank">Easy-RL</a></p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x8865;&#x5145;&#x4E00;&#x4E0B;&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x94FE;&#x7684;&#x76F8;&#x5173;&#x7406;&#x8BBA;&#x77E5;&#x8BC6;&#xFF0C;&#x5148;&#x7C97;&#x7565;&#x7684;&#x770B;&#x5B8C;&#x8FD9;&#x90E8;&#x5206;&#x518D;&#x8BF4;</p>
+<h2 id="&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x7B80;&#x5316;"><a name="&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x7B80;&#x5316;" class="anchor-navigation-ex-anchor" href="#&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x7B80;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x7B80;&#x5316;</h2>
+<p>&#x73AF;&#x5883;&#x7684;&#x771F;&#x5B9E;&#x8F6C;&#x5316;&#x72B6;&#x6001;&#x53EF;&#x80FD;&#x548C;&#x4E4B;&#x524D;&#x7684;&#x591A;&#x4E2A;&#x65F6;&#x523B;&#x76F8;&#x5173;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x5BFC;&#x81F4;&#x5EFA;&#x6A21;&#x56F0;&#x96BE;&#xFF0C;&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x5BF9;&#x73AF;&#x5883;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x5047;&#x8BBE;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#xFF1A;</p>
+<p>&#x8F6C;&#x5316;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x72B6;&#x6001;s&apos;&#x53EA;&#x548C;&#x5F53;&#x524D;&#x7684;&#x72B6;&#x6001;s&#x76F8;&#x5173;&#xFF0C;&#x4E0E;&#x4E4B;&#x524D;&#x7684;&#x72B6;&#x6001;&#x65E0;&#x5173;</p>
+<p>&#x540C;&#x6837;&#x7684;&#x6211;&#x4EEC;&#x5BF9;Policy&#x3001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x4E5F;&#x505A;&#x4E86;&#x540C;&#x6837;&#x7684;&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x5047;&#x8BBE;&#x6765;&#x7B80;&#x5316;&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#xFF1A;$G_t$&#x4EE3;&#x8868;&#x6536;&#x83B7;&#xFF08;return&#xFF09;&#xFF0C;&#x662F;&#x4ECE;&#x67D0;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x5F00;&#x59CB;&#x91C7;&#x6837;&#x76F4;&#x5230;&#x7EC8;&#x6B62;&#x72B6;&#x6001;&#x65F6;&#x6240;&#x6709;&#x5956;&#x52B1;&#x7684;&#x6709;&#x8870;&#x51CF;&#x7684;&#x548C;&#x3002;</p>
+<p><script type="math/tex; ">1.\ P_{ss'}^a = \mathbb{E}(S_{t+1} = s'|S_t=s,A_t=a)</script></p>
+<p><script type="math/tex; ">2. \ \pi(a|s) = P(A_t = a | S_t = s)</script></p>
+<p><script type="math/tex; ">3. \ v_\pi(s) =\mathbb{E}_\pi(G_t|S_t =s) = \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \gamma ^2 R_{t+3} + ... |S_t = s)</script></p>
+<p><strong>SUMMARY&#xFF1A;&#x7531;&#x4E8E;&#x73AF;&#x5883;&#x7684;&#x590D;&#x6742;&#x65F6;&#x5E8F;&#x5173;&#x7CFB;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x6027;&#x7684;&#x5047;&#x8BBE;&#xFF0C;&#x8BA9;&#x4E0B;&#x4E00;&#x4E2A;&#x65F6;&#x523B;&#x7684;&#x72B6;&#x6001;&#x6216;&#x8005;&#x9884;&#x6D4B;&#x503C;&#x53EA;&#x548C;&#x5F53;&#x524D;&#x65F6;&#x523B;&#x6709;&#x5173;&#xFF0C;&#x4ECE;&#x800C;&#x7B80;&#x5316;&#x5E76;&#x5047;&#x8BBE;&#x51FA;&#x6A21;&#x578B;</strong></p>
+<h2 id="mdp&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;"><a name="mdp&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#mdp&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. MDP&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;</h2>
+<p>&#x5728;&#x4E0A;&#x8FF0;&#x4EF7;&#x503C;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x52A0;&#x5165;&#x8003;&#x8651;&#x52A8;&#x4F5C;a&#x5E26;&#x6765;&#x7684;&#x4EF7;&#x503C;&#x5F71;&#x54CD;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF1A;</p>
+<p><script type="math/tex; ">q_{\pi}(s, a)=\mathbb{E}_{\pi}\left(G_{t} \mid S_{t}=s, A_{t}=a\right)=\mathbb{E}_{\pi}\left(R_{t+1}+\gamma R_{t+2}+\gamma^{2} R_{t+3}+\ldots \mid S_{t}=s, A_{t}=a\right)</script></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x516C;&#x5F0F;&#x5F97;&#x5230;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;&#xFF08;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#xFF09;&#xFF1A;</p>
+<p><script type="math/tex; ">\begin{aligned}
+v_{\pi}(s) &=\mathbb{E}{\pi}\left(R{t+1}+\gamma R_{t+2}+\gamma^{2} R_{t+3}+\ldots \mid S_{t}=s\right) \\
+&=\mathbb{E}{\pi}\left(R{t+1}+\gamma\left(R_{t+2}+\gamma R_{t+3}+\ldots\right) \mid S_{t}=s\right) \\
+&=\mathbb{E}{\pi}\left(R{t+1}+\gamma G_{t+1} \mid S_{t}=s\right) \\
+&=\mathbb{E}{\pi}\left(R{t+1}+\gamma v_{\pi}\left(S_{t+1}\right) \mid S_{t}=s\right)
+\end{aligned}</script></p>
+<p>&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x7531;&#x8BE5;&#x72B6;&#x6001;&#x7684;&#x5956;&#x52B1;&#x4EE5;&#x53CA;&#x540E;&#x7EED;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x6309;&#x7167;&#x4E00;&#x5B9A;&#x8870;&#x51CF;&#x6BD4;&#x4F8B;&#x8054;&#x5408;&#x800C;&#x6210;&#xFF0C;&#x540C;&#x6837;&#x7684;&#x6709;&#xFF1A;</p>
+<p><script type="math/tex; ">q_{\pi}(s, a)=\mathbb{E}_{\pi}\left(R_{t+1}+\gamma q_{\pi}\left(S_{t+1}, A_{t+1}\right) \mid S_{t}=s, A_{t}=a\right)</script></p>
+<p>SUMMARY&#xFF1A;&#x57FA;&#x4E8E;&#x9A6C;&#x5C14;&#x53EF;&#x592B;&#x5047;&#x8BBE;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF08;&#x52A8;&#x4F5C;&#x3001;&#x72B6;&#x6001;&#xFF09;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x9012;&#x63A8;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x8FD9;&#x4E2A;&#x9012;&#x63A8;&#x7684;&#x5F62;&#x5F0F;&#x4E5F;&#x88AB;&#x53EB;&#x505A;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#x3002;</p>
+<h2 id="&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;"><a name="&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. &#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x9012;&#x63A8;&#x5173;&#x7CFB;</h2>
+<p>&#x57FA;&#x4E8E;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x4EE5;&#x53CA;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x5F97;&#x5230;&#x4E24;&#x4E2A;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x5316;&#x5173;&#x7CFB;&#xFF1A;</p>
+<p>&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x662F;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x52A8;&#x4F5C;&#x5BF9;&#x4E8E;policy&#x7684;&#x671F;&#x671B;&#x3002;</p>
+<p>&#x5229;&#x7528;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x80FD;&#x53CD;&#x63A8;&#x5F97;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x6765;&#x8868;&#x793A;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF1A;</p>
+<p>&#x5F53;&#x524D;&#x7684;reward&#x548C;&#x53EF;&#x80FD;&#x8F6C;&#x79FB;&#x5230;&#x6240;&#x6709;&#x540E;&#x7EED;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x52A0;&#x6743;&#x548C;</p>
+<p><script type="math/tex; ">v_\pi(s) = \sum_{a\in A} \pi({a|s}) q_\pi(s,a)</script></p>
+<p><script type="math/tex; ">q_\pi(s,a) = R_s^a + \gamma \sum _ {s'\in S} P_{ss'}^a v_\pi(s')</script></p>
+<p>&#x5C06;&#x4E0A;&#x8FF0;&#x4E24;&#x4E2A;&#x5F0F;&#x5B50;&#x4E92;&#x76F8;&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5982;&#x4E0B;&#x7684;&#x7B80;&#x5316;&#xFF08;&#x53D8;&#x91CF;&#xFF09;&#x7B97;&#x5F0F;&#xFF08;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x79CD;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF09;</p>
+<p><script type="math/tex; ">\begin{gathered}v_{\pi}(s)=\sum_{a \in A} \pi(a \mid s)\left(R_{s}^{a}+\gamma \sum_{J \in S} P_{s s^{\prime}}^{a} v_{\pi}\left(s^{\prime}\right)\right) \\q_{\pi}(s, a)=R_{s}^{a}+\gamma \sum_{s^{\prime} \in S} P_{s s^{\prime}}^{a} \sum_{a^{\prime} \in A} \pi\left(a^{\prime} \mid s^{\prime}\right) q_{\pi}\left(s^{\prime}, a^{\prime}\right)\end{gathered}</script></p>
+<h2 id="&#x6700;&#x4F18;&#x4EF7;&#x503C;&#x51FD;&#x6570;"><a name="&#x6700;&#x4F18;&#x4EF7;&#x503C;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x4F18;&#x4EF7;&#x503C;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. &#x6700;&#x4F18;&#x4EF7;&#x503C;&#x51FD;&#x6570;</h2>
+<p>&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x770B;&#x539F;&#x6587;&#xFF0C;&#x7ED3;&#x5408;&#x76F8;&#x5E94;&#x7684;&#x4F8B;&#x5B50;&#x4E00;&#x8D77;&#x770B;&#xFF0C;&#x540E;&#x7EED;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x770B;EasyRL&#x4E2D;&#x7684;markov&#x7684;&#x76F8;&#x5173;&#x89E3;&#x8BFB;&#x6765;&#x8FDB;&#x884C;&#x6DF1;&#x5165;&#x7684;&#x7406;&#x89E3;&#x548C;&#x8BA1;&#x7B97;&#x7684;&#x5206;&#x6790;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x4E00;&#x4E2A;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7684;&#x95EE;&#x9898;&#x610F;&#x5473;&#x7740;&#x8981;&#x627E;&#x4E00;&#x4E2A;&#x6700;&#x6709;&#x7684;policy&#xFF08;&#x7B56;&#x7565;&#xFF09;&#xFF0C;&#x8BA9;Argent&#x5728;&#x548C;&#x73AF;&#x5883;&#x4EA4;&#x4E92;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x83B7;&#x5F97;&#x6BD4;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x7B56;&#x7565;&#x90FD;&#x66F4;&#x591A;&#x7684;&#x6536;&#x83B7;&#xFF0C;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x7B56;&#x7565;&#xFF0C;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6C42;&#x89E3;&#x6700;&#x4F18;&#x7B56;&#x7565;&#x2192; &#x6C42;&#x89E3;&#x6700;&#x4F18;&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF0C;&#x4F7F;&#x5F97;&#xFF08;&#x52A8;&#x4F5C;&#x3001;&#x72B6;&#x6001;&#xFF09;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x5230;&#x6700;&#x5927;&#x503C;&#x7684;&#x7B56;&#x7565;&#x5C31;&#x662F;&#x6700;&#x4F18;&#x7B56;&#x7565;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x6700;&#x4F18;&#x7B56;&#x7565;&#x6211;&#x4EEC;&#x5C06;&#x52A8;&#x4F5C;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;</p>
+<p><script type="math/tex; ">\pi_{*}(a \mid s)=\left\{\begin{array}{ll}1 & \text { if } a=\arg \max _{a \in A} q_{*}(s, a) \\0 & \text { else }\end{array}\right.</script></p>
+<p>&#x6709;&#xFF1A;</p>
+<p><script type="math/tex; ">v_*(s) = \max_a q_*(s,a)\\q_{*}(s, a)=R_{s}^{a}+\gamma \sum_{s^{\prime} \in S} P_{s s}^{a} v_{*}\left(s^{\prime}\right)</script></p>
+<p>&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6700;&#x7EC8;&#x5F97;&#x5230;&#xFF1A;</p>
+<p><script type="math/tex; ">\begin{gathered}v_{*}(s)=\max _{a}\left(R_{s}^{a}+\gamma \sum_{g^{\prime} \in S} P_{s s^{\prime}}^{a} v_{*}\left(s^{\prime}\right)\right) \\q_{*}(s, a)=R_{s}^{a}+\gamma \sum_{s^{\prime} \in S} P_{s s^{\prime}}^{a} \max _{a^{\prime}} q_{*}\left(s^{\prime}, a^{\prime}\right)\end{gathered}</script></p>
+<h1 id="chapter3-&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF08;dp&#xFF09;&#x6C42;&#x89E3;"><a name="chapter3-&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF08;dp&#xFF09;&#x6C42;&#x89E3;" class="anchor-navigation-ex-anchor" href="#chapter3-&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF08;dp&#xFF09;&#x6C42;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>4. Chapter3 &#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF08;DP&#xFF09;&#x6C42;&#x89E3;</h1>
+<p><a href="https://www.cnblogs.com/pinard/p/9463815.html" target="_blank">&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF08;&#x4E09;&#xFF09;&#x7528;&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF08;DP&#xFF09;&#x6C42;&#x89E3;</a></p>
+<ul>
+<li><p>&#x7528;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x6765;&#x6C42;&#x89E3;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x662F;&#x81EA;&#x7136;&#x7684;</p>
+<p>  <strong>&#x5173;&#x952E;&#x7684;&#x4E24;&#x70B9;</strong>&#xFF1A;</p>
+<ul>
+<li>&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x53EF;&#x4EE5;&#x7531;&#x9012;&#x5F52;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x6765;&#x5F97;&#x5230;</li>
+<li><p>&#x5B50;&#x95EE;&#x9898;&#x72B6;&#x6001;&#x95F4;&#x7684;&#x8F6C;&#x79FB;</p>
+<p>&#x4ECE;&#x4E0A;&#x9762;&#x63A8;&#x51FA;&#x7684;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#xFF0C;&#x8FD9;&#x4E2A;&#x9012;&#x63A8;&#x516C;&#x5F0F;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;DP&#x6C42;&#x89E3;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x7B49;&#x5F0F;&#xFF0C;&#x7136;&#x540E;&#x76F8;&#x5E94;&#x7684;Value&#x4EC0;&#x4E48;&#x7684;&#x4E5F;&#x548C;DP&#x6C42;&#x89E3;&#x8FC7;&#x7A0B;&#x7684;&#x9700;&#x6C42;&#x662F;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#x3002;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x5173;&#x952E;&#x7684;&#x65B9;&#x7A0B;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x9012;&#x63A8;&#x516C;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0A;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#x5468;&#x671F;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x53BB;&#x8BA1;&#x7B97;&#x5F53;&#x524D;&#x8FED;&#x4EE3;&#x5468;&#x671F;&#x72B6;&#x6001;S&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#xFF0C;&#x8FD9;&#x4E5F;&#x5C31;&#x662F;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x4E00;&#x4E2A;&#x6C42;&#x89E3;&#x7684;&#x81EA;&#x7136;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p>  &#x57FA;&#x4E8E;&#x8D1D;&#x514B;&#x66FC;&#x65B9;&#x7A0B;&#x63A8;&#x5BFC;&#x51FA;&#x6765;&#xFF0C;&#x63A8;&#x5BFC;&#x8FC7;&#x7A0B;&#x5DF2;&#x7ECF;&#x5728;&#x4E0A;&#x9762;&#x4E86;</p>
+</li>
+</ul>
+<p><script type="math/tex; ">v_{\pi}(s)=\sum_{a \in A} \pi(a \mid s)\left(R_{s}^{a}+\gamma \sum_{J \in S} P_{s s^{\prime}}^{a} v_{\pi}\left(s^{\prime}\right)\right)</script></p>
+<hr>
+<p>&#x5DF2;&#x77E5;&#x6761;&#x4EF6;&#xFF1A;&#x72B6;&#x6001;&#x96C6;S, &#x52A8;&#x4F5C;&#x96C6;A, &#x6A21;&#x578B;&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x6982;&#x7387;&#x77E9;&#x9635;P, &#x5373;&#x65F6;&#x5956;&#x52B1;R&#xFF0C;&#x8870;&#x51CF;&#x56E0;&#x5B50;&#x3B3;, &#x7ED9;&#x5B9A;&#x7B56;&#x7565;&#x3C0;</p>
+<h2 id="&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;"><a name="&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. &#x7B56;&#x7565;&#x8BC4;&#x4F30;&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;</h2>
+<p>&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF1A;&#x6C42;&#x89E3;&#x7ED9;&#x5B9A;&#x7B56;&#x7565;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5373;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7684;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6C42;&#x89E3;&#x601D;&#x8DEF;&#xFF1A; &#x4ECE;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x5F00;&#x59CB;&#xFF0C;&#x6309;&#x7167;&#x7ED9;&#x5B9A;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x7ED3;&#x5408;&#x5173;&#x952E;&#x7684;&#x8D1D;&#x5C14;&#x66FC;&#x9012;&#x63A8;&#x671F;&#x671B;&#x65B9;&#x7A0B;&#xFF0C;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#xFF0C;reward&#xFF0C;&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF0C;&#x76F4;&#x81F3;&#x6700;&#x7EC8;&#x6536;&#x655B;&#x3002;</p>
+<ul>
+<li><p>&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF1A;</p>
+<p>  &#x5047;&#x8BBE;&#x7B2C;k&#x8F6E;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BA1;&#x7B97;&#x51FA;&#x4E86;&#x6240;&#x6709;&#x7684;&#x72B6;&#x6001;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x518D;k+1&#x8F6E;&#x7684;&#x65F6;&#x5019;&#x5229;&#x7528;k&#x8F6E;&#x7684;&#x503C;&#x901A;&#x8FC7;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#x6765;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x3002;</p>
+</li>
+</ul>
+<p><script type="math/tex; ">v_{k+1}(s)=\sum_{a \in A} \pi(a \mid s)\left(R_{s}^{a}+\gamma \sum_{s' \in S} P_{s s^{\prime}}^{a} v_{\pi}\left(s^{\prime}\right)\right)</script></p>
+<p>&#x5177;&#x4F53;&#x6848;&#x4F8B;&#x4E0A;&#x9762;&#x7684;&#x7F51;&#x7AD9;&#x4E2D;&#x53BB;&#x770B;&#xFF1A;&#xFF08;&#x5F88;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#xFF09;</p>
+<h2 id="&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;"><a name="&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. &#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;</h2>
+<p>&#x63A7;&#x5236;&#x95EE;&#x9898;&#xFF1A;&#x9700;&#x8981;&#x540C;&#x65F6;&#x6C42;&#x89E3;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x548C;&#x7B56;&#x7565;</p>
+<p>&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#xFF1A;&#x4ECE;&#x4E00;&#x4E2A;&#x521D;&#x59CB;&#x4EFB;&#x610F;&#x7684;&#x7B56;&#x7565;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x65AD;&#x5730;&#x8FED;&#x4EE3;&#xFF0C;&#x8C03;&#x6574;&#x6211;&#x4EEC;&#x7684;&#x7B56;&#x7565;&#xFF0C;&#x4ECE;&#x800C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x6700;&#x4F18;&#x7684;&#x7B56;&#x7565;&#x3002;</p>
+<p>&#x6C42;&#x89E3;&#x601D;&#x8DEF;&#xFF1A;&#x8D2A;&#x5A6A;&#x6CD5;</p>
+<ul>
+<li><p>&#x5177;&#x4F53;&#x800C;&#x8A00;&#xFF1A;</p>
+<p>  &#x4E2A;&#x4F53;&#x5728;&#x67D0;&#x4E2A;&#x72B6;&#x6001;&#x4E0B;&#x9009;&#x62E9;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x662F;&#x5176;&#x80FD;&#x591F;&#x8FBE;&#x5230;&#x540E;&#x7EED;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x72B6;&#x6001;&#x4E2D;&#xFF0C;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x6700;&#x5927;&#x7684;&#x90A3;&#x4E2A;&#x72B6;&#x6001;&#xFF0C;</p>
+</li>
+</ul>
+<p><img src="https://gitee.com/Aiken97/markdown-image/raw/master/img/20210911210046.jpg" alt="https://images2018.cnblogs.com/blog/1042406/201808/1042406-20180812191537706-1156414836.jpg"></p>
+<p>&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x8FC7;&#x7A0B;&#x7684;&#x6F14;&#x793A;&#xFF1A;&#x9010;&#x6B65;&#x7684;&#x8FED;&#x4EE3;&#x7B56;&#x7565;&#x548C;&#x76F8;&#x5E94;&#x7684;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF0C;&#x6700;&#x7EC8;&#x4F7F;&#x5F97;&#x4E24;&#x8005;&#x540C;&#x65F6;&#x6536;&#x655B;</p>
+<h2 id="&#x4EF7;&#x503C;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;"><a name="&#x4EF7;&#x503C;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x4EF7;&#x503C;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3. &#x4EF7;&#x503C;&#x8FED;&#x4EE3;&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;</h2>
+<p>&#x548C;&#x4E0A;&#x8FF0;&#x7684;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x7684;&#x95EE;&#x9898;&#x4E00;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8D2A;&#x5A6A;&#x7684;&#x7B56;&#x7565;&#x53BB;&#x53CA;&#x65F6;&#x8C03;&#x6574;&#x7B56;&#x7565;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7B49;&#x5230;&#x6536;&#x655B;&#x4E86;&#x624D;&#x8C03;&#x6574;&#x7B56;&#x7565;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x80FD;&#x5F88;&#x5FEB;&#x7684;&#x51CF;&#x5C11;&#x8FED;&#x4EE3;&#x6B21;&#x6570;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x7684;&#x66F4;&#x65B0;&#x65B9;&#x6CD5;&#x4E5F;&#x4F1A;&#x4E0D;&#x592A;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x80FD;&#x66F4;&#x5FEB;&#x7684;&#x6536;&#x655B;</p>
+<p><script type="math/tex; ">v_{k+1}(s)=\max_{a \in A} \left(R_{s}^{a}+\gamma \sum_{s' \in S} P_{s s^{\prime}}^{a} v_{\pi}\left(s^{\prime}\right)\right)</script></p>
+<h2 id="&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;"><a name="&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>4.4. &#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;</h2>
+<blockquote>
+<p>&#x5728;&#x524D;&#x51E0;&#x8282;&#x6211;&#x4EEC;&#x8BB2;&#x7684;&#x90FD;&#x662F;&#x540C;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#xFF0C;&#x5373;&#x6BCF;&#x8F6E;&#x8FED;&#x4EE3;&#x6211;&#x4F1A;&#x8BA1;&#x7B97;&#x51FA;&#x6240;&#x6709;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x5E76;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#xFF0C;&#x5728;&#x4E0B;&#x4E00;&#x8F6E;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x4FDD;&#x5B58;&#x8D77;&#x6765;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x6765;&#x8BA1;&#x7B97;&#x65B0;&#x4E00;&#x8F6E;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x3002;
+&#x53E6;&#x4E00;&#x79CD;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x6C42;&#x89E3;&#x662F;&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#xFF0C;&#x5728;&#x8FD9;&#x4E9B;&#x7B97;&#x6CD5;&#x91CC;&#xFF0C;&#x6BCF;&#x4E00;&#x6B21;&#x8FED;&#x4EE3;&#x5E76;&#x4E0D;&#x5BF9;&#x6240;&#x6709;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#xFF0C;&#x800C;&#x662F;&#x4F9D;&#x636E;&#x4E00;&#x5B9A;&#x7684;&#x539F;&#x5219;&#x6709;&#x9009;&#x62E9;&#x6027;&#x7684;&#x66F4;&#x65B0;&#x90E8;&#x5206;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#xFF0C;&#x8FD9;&#x7C7B;&#x7B97;&#x6CD5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4E9B;&#x72EC;&#x7279;&#x4F18;&#x52BF;&#xFF0C;&#x5F53;&#x7136;&#x6709;&#x989D;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x4EE3;&#x4EF7;&#x3002;
+&#x5E38;&#x89C1;&#x7684;&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#x6709;&#x4E09;&#x79CD;&#xFF1A;
+&#x7B2C;&#x4E00;&#x79CD;&#x662F;&#x539F;&#x4F4D;&#x52A8;&#x6001;&#x89C4;&#x5212; (in-place dynamic programming)&#xFF0C; &#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x53E6;&#x5916;&#x4FDD;&#x5B58;&#x4E00;&#x4EFD;&#x4E0A;&#x4E00;&#x8F6E;&#x8BA1;&#x7B97;&#x51FA;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x3002;&#x800C;&#x662F;&#x5373;&#x65F6;&#x8BA1;&#x7B97;&#x5373;&#x65F6;&#x66F4;&#x65B0;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x4FDD;&#x5B58;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x8282;&#x7EA6;&#x5185;&#x5B58;&#x3002;&#x4EE3;&#x4EF7;&#x662F;&#x6536;&#x655B;&#x901F;&#x5EA6;&#x53EF;&#x80FD;&#x7A0D;&#x6162;&#x3002;
+&#x7B2C;&#x4E8C;&#x79CD;&#x662F;&#x4F18;&#x5148;&#x7EA7;&#x52A8;&#x6001;&#x89C4;&#x5212; (prioritised sweeping)&#xFF1A;&#x8BE5;&#x7B97;&#x6CD5;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x4F18;&#x5148;&#x7EA7;&#x5206;&#x7EA7;&#xFF0C;&#x4F18;&#x5148;&#x7EA7;&#x8D8A;&#x9AD8;&#x7684;&#x72B6;&#x6001;&#x5176;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x4F18;&#x5148;&#x5F97;&#x5230;&#x66F4;&#x65B0;&#x3002;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x8D1D;&#x5C14;&#x66FC;&#x8BEF;&#x5DEE;&#x6765;&#x8BC4;&#x4F30;&#x72B6;&#x6001;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x8D1D;&#x5C14;&#x66FC;&#x8BEF;&#x5DEE;&#x5373;&#x65B0;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x4E0E;&#x524D;&#x6B21;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x5DEE;&#x7684;&#x7EDD;&#x5BF9;&#x503C;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x52A0;&#x5FEB;&#x6536;&#x655B;&#x901F;&#x5EA6;&#xFF0C;&#x4EE3;&#x4EF7;&#x662F;&#x9700;&#x8981;&#x7EF4;&#x62A4;&#x4E00;&#x4E2A;&#x4F18;&#x5148;&#x7EA7;&#x961F;&#x5217;&#x3002;
+&#x7B2C;&#x4E09;&#x79CD;&#x662F;&#x5B9E;&#x65F6;&#x52A8;&#x6001;&#x89C4;&#x5212; (real-time dynamic programming)&#xFF1A;&#x5B9E;&#x65F6;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4E2A;&#x4F53;&#x4E0E;&#x73AF;&#x5883;&#x4EA4;&#x4E92;&#x4EA7;&#x751F;&#x7684;&#x5B9E;&#x9645;&#x7ECF;&#x5386;&#x6765;&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#xFF0C;&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x4E2A;&#x4F53;&#x5B9E;&#x9645;&#x7ECF;&#x5386;&#x8FC7;&#x7684;&#x72B6;&#x6001;&#x8FDB;&#x884C;&#x4EF7;&#x503C;&#x66F4;&#x65B0;&#x3002;&#x8FD9;&#x6837;&#x4E2A;&#x4F53;&#x7ECF;&#x5E38;&#x8BBF;&#x95EE;&#x8FC7;&#x7684;&#x72B6;&#x6001;&#x5C06;&#x5F97;&#x5230;&#x8F83;&#x9AD8;&#x9891;&#x6B21;&#x7684;&#x4EF7;&#x503C;&#x66F4;&#x65B0;&#xFF0C;&#x800C;&#x4E0E;&#x4E2A;&#x4F53;&#x5173;&#x7CFB;&#x4E0D;&#x5BC6;&#x5207;&#x3001;&#x4E2A;&#x4F53;&#x8F83;&#x5C11;&#x8BBF;&#x95EE;&#x5230;&#x7684;&#x72B6;&#x6001;&#x5176;&#x4EF7;&#x503C;&#x5F97;&#x5230;&#x66F4;&#x65B0;&#x7684;&#x673A;&#x4F1A;&#x5C31;&#x8F83;&#x5C11;&#x3002;&#x6536;&#x655B;&#x901F;&#x5EA6;&#x53EF;&#x80FD;&#x7A0D;&#x6162;&#x3002;</p>
+</blockquote>
+<p><strong>SUMMARY &#x52A8;&#x6001;&#x89C4;&#x5212;&#x662F;&#x6211;&#x4EEC;&#x8BB2;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x6C42;&#x89E3;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x9884;&#x6D4B;&#x548C;&#x63A7;&#x5236;&#x95EE;&#x9898;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x7684;&#x7B97;&#x6CD5;&#x601D;&#x8DEF;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#xFF0C;&#x4E3B;&#x8981;&#x5C31;&#x662F;&#x5229;&#x7528;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#x6765;&#x8FED;&#x4EE3;&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#xFF0C;&#x7528;&#x8D2A;&#x5A6A;&#x6CD5;&#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x8FED;&#x4EE3;&#x66F4;&#x65B0;&#x6700;&#x4F18;&#x7B56;&#x7565;&#x3002;</strong></p>
+<ul>
+<li><p>&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x7F3A;&#x70B9;&#xFF1A;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x79CD;&#x904D;&#x5386;&#x7684;&#x65B9;&#x5F0F;</p>
+<p>  &#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#x4F7F;&#x7528;&#x5168;&#x5BBD;&#x5EA6;&#xFF08;full-width&#xFF09;&#x7684;&#x56DE;&#x6EAF;&#x673A;&#x5236;&#x6765;&#x8FDB;&#x884C;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x7684;&#x66F4;&#x65B0;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x540C;&#x6B65;&#x8FD8;&#x662F;&#x5F02;&#x6B65;&#x52A8;&#x6001;&#x89C4;&#x5212;&#xFF0C;&#x5728;&#x6BCF;&#x4E00;&#x6B21;&#x56DE;&#x6EAF;&#x66F4;&#x65B0;&#x67D0;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x65F6;&#xFF0C;&#x90FD;&#x8981;&#x56DE;&#x6EAF;&#x5230;&#x8BE5;&#x72B6;&#x6001;&#x7684;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x540E;&#x7EED;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x5229;&#x7528;&#x8D1D;&#x5C14;&#x66FC;&#x65B9;&#x7A0B;&#x66F4;&#x65B0;&#x8BE5;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x3002;&#x8FD9;&#x79CD;&#x5168;&#x5BBD;&#x5EA6;&#x7684;&#x4EF7;&#x503C;&#x66F4;&#x65B0;&#x65B9;&#x5F0F;&#x5BF9;&#x4E8E;&#x72B6;&#x6001;&#x6570;&#x8F83;&#x5C11;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x95EE;&#x9898;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x6709;&#x6548;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x95EE;&#x9898;&#x89C4;&#x6A21;&#x5F88;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#x5C06;&#x4F1A;&#x56E0;&#x8D1D;&#x5C14;&#x66FC;&#x7EF4;&#x5EA6;&#x707E;&#x96BE;&#x800C;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#x3002;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5BFB;&#x627E;&#x5176;&#x4ED6;&#x7684;&#x9488;&#x5BF9;&#x590D;&#x6742;&#x95EE;&#x9898;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x95EE;&#x9898;&#x6C42;&#x89E3;&#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+</ul>
+<h1 id="chapter-4-&#x7528;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x6C42;&#x89E3;"><a name="chapter-4-&#x7528;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x6C42;&#x89E3;" class="anchor-navigation-ex-anchor" href="#chapter-4-&#x7528;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x6C42;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>5. Chapter 4 &#x7528;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x6C42;&#x89E3;</h1>
+<p><a href="https://www.cnblogs.com/pinard/p/9492980.html" target="_blank">&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF08;&#x56DB;&#xFF09;&#x7528;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#xFF08;MC&#xFF09;&#x6C42;&#x89E3;</a></p>
+<p>&#x2753; &#x7531; 1. DP&#x65B9;&#x6CD5;&#x7684;&#x5168;&#x56DE;&#x6EAF;&#x673A;&#x5236;&#xFF08;&#x5B8C;&#x5168;&#x904D;&#x5386;&#xFF09;&#x5E26;&#x6765;&#x7684;&#x8FC7;&#x5EA6;&#x7684;&#x8BA1;&#x7B97;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x5BF9;&#x4E8E;&#x590D;&#x6742;&#x95EE;&#x9898;&#x7684;&#x6C42;&#x89E3;&#x56F0;&#x96BE;</p>
+<pre><code>         2.  &#x5F88;&#x591A;&#x65F6;&#x5019;&#x5BF9;&#x4E8E;&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x6A21;&#x578B;P&#x7684;&#x672A;&#x77E5;
+</code></pre><ul>
+<li>DP&#x4E2D;&#x95EE;&#x9898;&#x9884;&#x6D4B;&#x548C;&#x63A7;&#x5236;&#x95EE;&#x9898;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#x5728;P&#x5DF2;&#x77E5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x5B9A;&#x4E49;&#x7684;&#xFF0C;&#x8FD9;&#x79CD;&#x79F0;&#x4E4B;&#x4E3A;&#xFF1A;&#x57FA;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x95EE;&#x9898;</li>
+<li>&#x800C;&#x4E00;&#x822C;&#x6027;&#x9884;&#x6D4B;&#x548C;&#x63A7;&#x5236;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5728;&#x72B6;&#x6001;&#x8F6C;&#x5316;&#x6982;&#x7387;&#x77E9;&#x9635;P&#x672A;&#x77E5;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6C42;&#x89E3;1. &#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570; &#x548C;2. 1+&#x6700;&#x4F18;&#x7B56;&#x7565;&#x7684;&#x95EE;&#x9898;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8003;&#x8651;&#x5176;&#x4ED6;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;DP&#x65B9;&#x6CD5;&#x6765;&#x6C42;&#x89E3;&#x8FD9;&#x6837;&#x7684;RL&#x95EE;&#x9898;&#x2014;&#x2014;Monto-Calo&#x662F;&#x4E00;&#x79CD;&#x53EF;&#x884C;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>&#x5DF2;&#x77E5;&#x6761;&#x4EF6;&#xFF1A;&#x72B6;&#x6001;&#x96C6;S, &#x52A8;&#x4F5C;&#x96C6;A,  &#x5373;&#x65F6;&#x5956;&#x52B1;R&#xFF0C;&#x8870;&#x51CF;&#x56E0;&#x5B50;&#x3B3;&#xFF0C;&#x63A2;&#x7D22;&#x7387;&#x3B5;</p>
+<h2 id="monto-calo-&#x6C42;&#x89E3;"><a name="monto-calo-&#x6C42;&#x89E3;" class="anchor-navigation-ex-anchor" href="#monto-calo-&#x6C42;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. Monto-Calo &#x6C42;&#x89E3;</h2>
+<p>&#x57FA;&#x4E8E;&#x91C7;&#x6837;&#x7684;&#x601D;&#x8DEF;&#xFF1A;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x901A;&#x8FC7;&#x91C7;&#x6837;&#x82E5;&#x5E72;&#x7ECF;&#x5386;&#x5B8C;&#x6574;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;(episode)&#x6765;&#x4F30;&#x8BA1;&#x72B6;&#x6001;&#x7684;&#x771F;&#x5B9E;&#x4EF7;&#x503C;&#x3002;</p>
+<p>&#x7ECF;&#x5386;&#x5B8C;&#x6574;&#x5C31;&#x662F;&#x8FD9;&#x4E2A;&#x5E8F;&#x5217;&#x5FC5;&#x987B;&#x662F;&#x8FBE;&#x5230;&#x7EC8;&#x70B9;&#x7684;&#x3002;&#x6BD4;&#x5982;&#x4E0B;&#x68CB;&#x95EE;&#x9898;&#x5206;&#x51FA;&#x8F93;&#x8D62;&#xFF0C;&#x9A7E;&#x8F66;&#x95EE;&#x9898;&#x6210;&#x529F;&#x5230;&#x8FBE;&#x7EC8;&#x70B9;&#x6216;&#x8005;&#x5931;&#x8D25;&#x3002;
+&#x6709;&#x4E86;&#x5F88;&#x591A;&#x7EC4;&#x8FD9;&#x6837;&#x7ECF;&#x5386;&#x5B8C;&#x6574;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6765;&#x8FD1;&#x4F3C;&#x7684;&#x4F30;&#x8BA1;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#xFF0C;&#x8FDB;&#x800C;&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x548C;&#x63A7;&#x5236;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
+<p>&#x5173;&#x952E;&#x516C;&#x5F0F;&#x56DE;&#x987E;&#xFF1A;</p>
+<p><script type="math/tex; ">v_\pi(s) = \mathbb{E}(R_{t+1} + \gamma R_{t+2} + \gamma ^2 R_{t+3} + ... |S_t = s)</script></p>
+<h2 id="mc&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF09;"><a name="mc&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF09;" class="anchor-navigation-ex-anchor" href="#mc&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. MC&#x6C42;&#x89E3;&#x9884;&#x6D4B;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF09;</h2>
+<p>&#x601D;&#x8DEF;&#xFF1A;&#x6C42;&#x89E3;&#x67D0;&#x4E2A;s&#x7684;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#xFF1A;&#x5BF9;&#x6240;&#x6709;&#x91C7;&#x6837;&#x5230;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x4E2D;&#xFF0C;&#x51FA;&#x73B0;&#x8BE5;&#x72B6;&#x6001;&#x4E4B;&#x540E;&#x7684;&#x6536;&#x83B7;&#x518D;&#x53D6;&#x5E73;&#x5747;&#x503C;&#x6765;&#x8FD1;&#x4F3C;&#x6C42;&#x89E3;&#x3002;</p>
+<p><script type="math/tex; ">G_t = R_{t+1} + \gamma R_{t+1} + ...+ \gamma ^{T-t+1}R_T \\
+V_\pi (s) \approx average(G_t), s.t. S_t = s</script></p>
+<p><strong>&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x5728;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x4E2D;&#x591A;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x5904;&#x7406;</strong></p>
+<p>&#x4E3B;&#x8981;&#x6709;&#x4E24;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>First Visit&#xFF1A; &#x53EA;&#x7EDF;&#x8BA1;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x6765;&#x8FDB;&#x884C;&#x5747;&#x503C;&#x7684;&#x8BA1;&#x7B97;</li>
+<li>Every Visit&#xFF1A;&#x6BCF;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x90FD;&#x52A0;&#x5165;&#x5747;&#x503C;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x66F4;&#x9002;&#x5408;&#x6837;&#x672C;&#x91CF;&#x5C11;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4F46;&#x662F;&#x8BA1;&#x7B97;&#x91CF;&#x8981;&#x66F4;&#x5927;&#x4E00;&#x4E9B;&#x3002;</li>
+</ol>
+<p><strong>&#x7D2F;&#x8FDB;&#x66F4;&#x65B0;&#x5E73;&#x5747;&#x503C;&#xFF08;Incremental mean&#xFF09;</strong></p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;&#x6BCF;&#x4E2A;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x7684;&#x503C;&#x90FD;&#x8BB0;&#x5F55;&#x4E0B;&#x6765;&#x5728;&#x6700;&#x540E;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x8017;&#x8D39;&#x5927;&#x91CF;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7D2F;&#x8BA1;&#x66F4;&#x65B0;&#x5747;&#x503C;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x8FDB;&#x884C;&#x4E0D;&#x540C;&#x8F6E;&#x6B21;&#x4E4B;&#x95F4;&#x7684;&#x8FED;&#x4EE3;&#x3002;</p>
+<p>&#x6362;&#x8A00;&#x4E4B;&#xFF1A;&#x7EDF;&#x8BA1;&#x5F53;&#x524D;&#x7684;&#x5747;&#x503C;&#x548C;&#x72B6;&#x6001;&#x904D;&#x5386;&#x5230;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+<p><script type="math/tex; ">\mu_k = \frac{1}{k} \sum_{j=1}^{k}x_j = \frac{1}{k}(x_k+\sum_{j=1}^{k-1}x_j) = \frac{1}{k}(x_k+(k-1)\mu_{k-1}) = \mu_{k-1} + \frac{1}{k}(x_k-\mu_{k-1})</script></p>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x516C;&#x5F0F;&#x7684;&#x66F4;&#x65B0;&#x8FC7;&#x7A0B;&#x4FEE;&#x6539;&#x6210;&#xFF1A;</p>
+<p><script type="math/tex; ">N(S_t) = N(S_t)+1\\
+V(S_t) = V(S_t) + \frac{1}{N(S_t)}(G_t-V(S_t))</script></p>
+<p>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#xFF08;&#x5185;&#x5B58;&#x6D88;&#x8017;&#xFF09;&#x5C31;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#x4E86;&#x3002;</p>
+<p>&#x5BF9;&#x6D77;&#x91CF;&#x6570;&#x636E;&#x505A;&#x5206;&#x5E03;&#x5F0F;&#x8FED;&#x4EE3;&#x7684;&#x65F6;&#x5019;$N(S_t)$&#x8BA1;&#x7B97;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x60C5;&#x51B5;</p>
+<p><script type="math/tex; ">V(S_t) = V(S_t) + \alpha(G_t-V(S_t))</script></p>
+<p>&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x4E5F;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="mc&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#xFF09;"><a name="mc&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#xFF09;" class="anchor-navigation-ex-anchor" href="#mc&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. MC&#x6C42;&#x89E3;&#x63A7;&#x5236;&#x95EE;&#x9898;&#xFF08;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#xFF09;</h2>
+<p>&#x548C;&#x7B56;&#x7565;&#x8FED;&#x4EE3;&#x7684;&#x65B9;&#x5F0F;&#x4E5F;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x4E5F;&#x662F;&#x5148;&#x505A;&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x4E00;&#x5B9A;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x6BD4;&#x5982;&#x8D2A;&#x5A6A;&#x7B56;&#x7565;&#xFF09;&#x66F4;&#x65B0;&#x7B56;&#x7565;&#x3002;</p>
+<ul>
+<li>&#x548C;DP&#x76F8;&#x6BD4;&#x7684;&#x4E0D;&#x540C;&#x6709;&#x5982;&#x4E0B;&#x51E0;&#x70B9;&#xFF1A;<ol>
+<li>&#x7B56;&#x7565;&#x8BC4;&#x4F30;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x540C;</li>
+<li>MC&#x4F18;&#x5316;&#x6700;&#x4F18;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#x800C;&#x4E0D;&#x662F;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x51FD;&#x6570;</li>
+<li>DP&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x8D2A;&#x5A6A;&#x6CD5;&#xFF0C;MC&#x4F7F;&#x7528;$\epsilon$-&#x8D2A;&#x5A6A;&#x6CD5;</li>
+</ol>
+</li>
+</ul>
+<p>$\epsilon$-&#x8D2A;&#x5A6A;&#x6CD5;&#xFF1A;</p>
+<p>&#x4E00;&#x822C;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x8F83;&#x5C0F;&#x7684;&#x503C;&#xFF0C;&#x7136;&#x540E;&#x7528;1-$\epsilon$&#x6765;&#x9009;&#x62E9;&#x6700;&#x5927;&#x884C;&#x4E3A;&#x4EF7;&#x503C;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x7136;&#x540E;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x968F;&#x673A;&#x5728;m&#x4E2A;&#x53EF;&#x884C;&#x884C;&#x4E3A;&#x4E2D;&#x968F;&#x673A;&#x9009;&#x62E9;</p>
+<p><script type="math/tex; ">\pi(a \mid s)=\left\{\begin{array}{ll}\epsilon / m+1-\epsilon & \text { if } a^{*}=\arg \max _{a \in A} Q(s, a) \\\epsilon / m & \text { else }\end{array}\right.</script></p>
+<p>&#x4E3A;&#x4E86;&#x4F7F;&#x5F97;&#x7B97;&#x6CD5;&#x6536;&#x655B;&#xFF1B;$\epsilon$&#x4F1A;&#x9010;&#x6E10;&#x51CF;&#x5C0F;&#xFF0C;&#x5E76;&#x8D8B;&#x4E8E;0&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x548C;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7C7B;&#x4F3C;&#x7684;&#x56FE;</p>
+<p><img src="https://raw.githubusercontent.com/AikenH/md-image/master/img/1042406-20180817164828651-1814136312.jpg" alt="https://raw.githubusercontent.com/AikenH/md-image/master/img/1042406-20180817164828651-1814136312.jpg"></p>
+<p><strong>&#x5177;&#x4F53;&#x7684;&#x7B97;&#x6CD5;&#x6D41;&#x7A0B;&#xFF1A;</strong></p>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x603B;&#x7ED3;&#x4E0B;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x6C42;&#x89E3;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x63A7;&#x5236;&#x95EE;&#x9898;&#x7684;&#x7B97;&#x6CD5;&#x6D41;&#x7A0B;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x7B97;&#x6CD5;&#x662F;&#x5728;&#x7EBF;(on-policy)&#x7248;&#x672C;&#x7684;,&#x76F8;&#x5BF9;&#x7684;&#x7B97;&#x6CD5;&#x8FD8;&#x6709;&#x79BB;&#x7EBF;(off-policy)&#x7248;&#x672C;&#x7684;&#x3002;&#x5728;&#x7EBF;&#x548C;&#x79BB;&#x7EBF;&#x7684;&#x533A;&#x522B;&#x6211;&#x4EEC;&#x5728;&#x540E;&#x7EED;&#x7684;&#x6587;&#x7AE0;&#x91CC;&#x9762;&#x4F1A;&#x8BB2;&#x3002;&#x540C;&#x65F6;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7528;&#x7684;&#x662F;every-visit,&#x5373;&#x4E2A;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x4E2D;&#x6BCF;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x76F8;&#x540C;&#x72B6;&#x6001;&#xFF0C;&#x90FD;&#x4F1A;&#x8BA1;&#x7B97;&#x5BF9;&#x5E94;&#x7684;&#x6536;&#x83B7;&#x503C;&#x3002;</p>
+<p>&#x8F93;&#x5165;&#xFF1A;&#x72B6;&#x6001;&#x96C6;S, &#x52A8;&#x4F5C;&#x96C6;A, &#x5373;&#x65F6;&#x5956;&#x52B1;R&#xFF0C;&#x8870;&#x51CF;&#x56E0;&#x5B50;&#x3B3;, &#x63A2;&#x7D22;&#x7387;&#x3F5;&#x3000;
+&#x8F93;&#x51FA;&#xFF1A;&#x6700;&#x4F18;&#x7684;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;q&#x2217;&#x548C;&#x6700;&#x4F18;&#x7B56;&#x7565;&#x3C0;&#x2217;&#x3000;</p>
+<ol>
+<li><p>&#x521D;&#x59CB;&#x5316;&#x6240;&#x6709;&#x7684;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;Q(s,a)=0&#xFF0C; &#x72B6;&#x6001;&#x6B21;&#x6570;N(s,a)=0&#xFF0C;&#x91C7;&#x6837;&#x6B21;&#x6570;k=0&#xFF0C;&#x968F;&#x673A;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x7B56;&#x7565;&#x3C0;&#x3000;</p>
+</li>
+<li><p>k=k+1, &#x57FA;&#x4E8E;&#x7B56;&#x7565;&#x3C0;&#x8FDB;&#x884C;&#x7B2C;k&#x6B21;&#x8499;&#x7279;&#x5361;&#x7F57;&#x91C7;&#x6837;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;:S1,A1,R2,S2,A2,...St,At,Rt+1,...RT,ST</p>
+</li>
+<li><p>&#x5BF9;&#x4E8E;&#x8BE5;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x91CC;&#x51FA;&#x73B0;&#x7684;&#x6BCF;&#x4E00;&#x72B6;&#x6001;&#x884C;&#x4E3A;&#x5BF9;(St,At)&#xFF0C;&#x8BA1;&#x7B97;&#x5176;&#x6536;&#x83B7;Gt, &#x66F4;&#x65B0;&#x5176;&#x8BA1;&#x6570;N(s,a)&#x548C;&#x884C;&#x4E3A;&#x4EF7;&#x503C;&#x51FD;&#x6570;Q(s,a)&#xFF1A;</p>
+</li>
+</ol>
+<p><script type="math/tex; ">G_t = R_{t+1} + \gamma R_{t+1} + ...+ \gamma ^{T-t+1}R_T \\N(S_t,A_t) = N(S_t,A_t)+1\\
+Q(S_t,A_t) = Q(S_t,A_t) + \frac{1}{N(S_t,A_t)}(G_t-Q(S_t,A_t))</script></p>
+<ol>
+<li>&#x57FA;&#x4E8E;&#x65B0;&#x8BA1;&#x7B97;&#x51FA;&#x7684;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#xFF0C;&#x66F4;&#x65B0;&#x5F53;&#x524D;&#x7684;&#x3F5;&#x2212;&#x8D2A;&#x5A6A;&#x7B56;&#x7565;&#xFF1A;</li>
+</ol>
+<p><script type="math/tex; ">\epsilon = \frac{1}{k}\\\pi(a \mid s)=\left\{\begin{array}{ll}\epsilon / m+1-\epsilon & \text { if } a^{*}=\arg \max _{a \in A} Q(s, a) \\\epsilon / m & \text { else }\end{array}\right.</script></p>
+<ol>
+<li>&#x5982;&#x679C;&#x6240;&#x6709;&#x7684;Q(s,a)&#x6536;&#x655B;&#xFF0C;&#x5219;&#x5BF9;&#x5E94;&#x7684;&#x6240;&#x6709;Q(s,a)&#x5373;&#x4E3A;&#x6700;&#x4F18;&#x7684;&#x52A8;&#x4F5C;&#x4EF7;&#x503C;&#x51FD;&#x6570;q&#x2217;&#x3002;&#x5BF9;&#x5E94;&#x7684;&#x7B56;&#x7565;&#x3C0;(a|s)&#x5373;&#x4E3A;&#x6700;&#x4F18;&#x7B56;&#x7565;&#x3C0;&#x2217;&#x3002;&#x5426;&#x5219;&#x8F6C;&#x5230;&#x7B2C;&#x4E8C;&#x6B65;&#x3002;</li>
+</ol>
+<p><strong>SUMMARY:&#x5B9E;&#x9645;&#x4E0A;MC&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x91C7;&#x6837;&#x6E10;&#x8FDB;&#x6C42;&#x5E73;&#x5747;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x4E0D;&#x65AD;&#x7684;&#x8FED;&#x4EE3;&#x8FC7;&#x7A0B;&#x4E2D;&#x627E;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x69FF;&#x8FD1;&#x4F3C;&#x503C;&#x3002;</strong></p>
+<h1 id="chapter5-&#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF08;td&#xFF09;&#x6C42;&#x89E3;"><a name="chapter5-&#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF08;td&#xFF09;&#x6C42;&#x89E3;" class="anchor-navigation-ex-anchor" href="#chapter5-&#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF08;td&#xFF09;&#x6C42;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>6. Chapter5 &#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF08;TD&#xFF09;&#x6C42;&#x89E3;</h1>
+<p><a href="https://www.cnblogs.com/pinard/p/9529828.html" target="_blank">&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#xFF08;&#x4E94;&#xFF09;&#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF08;TD&#xFF09;&#x6C42;&#x89E3;</a></p>
+<p>&#x8499;&#x7279;&#x5361;&#x6D1B;&#x6CD5;&#x867D;&#x7136;&#x7075;&#x6D3B;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x73AF;&#x5883;&#x8F6C;&#x5316;&#x6982;&#x7387;&#x6A21;&#x578B;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x6709;&#x9650;&#x5236;&#xFF1A;&#x6240;&#x6709;&#x7684;&#x91C7;&#x6837;&#x5E8F;&#x5217;&#x90FD;&#x9700;&#x8981;&#x662F;&#x5B8C;&#x6574;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B8C;&#x6574;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;Monto-Calo&#x4E86;&#x3002;</p>
+<p>&#x5728;&#x4E0D;&#x5B8C;&#x6574;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x7B97;&#x6CD5;&#xFF08;Temporal-Difference&#xFF0C;TD&#xFF09;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x4E0D;&#x57FA;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x7B97;&#x6CD5;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6CA1;&#x6709;&#x73AF;&#x5883;&#x8F6C;&#x79FB;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF09;</p>
+<p>&#x5173;&#x952E;&#x516C;&#x5F0F;&#x56DE;&#x987E;&#xFF1A;</p>
+<p><script type="math/tex; ">蒙特卡洛：G_t = R_{t+1} + \gamma R_{t+1} + ...+ \gamma ^{T-t+1}R_T \\
+
+贝尔曼（TD）：v_{\pi}(s) = =\mathbb{E}{\pi}\left(R_{t+1}+\gamma v_{\pi}\left(S_{t+1}\right) \mid S_{t}=s\right)
+</script></p>
+<p>&#x7531;&#x4E8E;&#x5982;&#x679C;&#x4F7F;&#x7528;G&#x7684;&#x516C;&#x5F0F;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6709;T&#x65F6;&#x523B;&#x7684;R&#x6765;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x5206;&#x6790;&#xFF0C; &#x4E3A;&#x4E86;&#x7B80;&#x5316;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8D1D;&#x5C14;&#x66FC;&#x7684;&#x9012;&#x63A8;&#x5F0F;&#x6765;&#x8FDB;&#x884C;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x7684;&#x5206;&#x6790;&#xFF08;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x540C;&#x4E2A;&#x7B49;&#x5F0F;&#xFF09;</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#xFF1A;</p>
+<p>&#x4F7F;&#x7528;$R<em>{t+1} + \gamma v(S</em>{t+1})$&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;TD&#x76EE;&#x6807;&#x503C;&#xFF09; &#x6765;&#x4EE3;&#x66FF;&#x6536;&#x83B7;$G<em>t$&#xFF0C;&#x540C;&#x65F6;&#x4EE4;$R</em>{t+1} + \gamma v(S_{t+1}) - V(S_t)$&#x79F0;&#x4E3A;TD&#x8BEF;&#x5DEE;&#xFF0C;&#x7528;TD&#x76EE;&#x6807;&#x503C;&#x6765;&#x4EE3;&#x66FF;&#x6536;&#x83B7;G&#x7684;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;&#x5F15;&#x5BFC;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x4E24;&#x4E2A;&#x8FDE;&#x7EED;&#x7684;&#x72B6;&#x6001;&#x548C;&#x5BF9;&#x5E94;&#x7684;&#x5956;&#x52B1;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x6C42;&#x89E3;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x7684;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
+<h2 id="td&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x6C42;&#x89E3;"><a name="td&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x6C42;&#x89E3;" class="anchor-navigation-ex-anchor" href="#td&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x6C42;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. TD&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x6C42;&#x89E3;</h2>
+<p>&#x9884;&#x6D4B;&#x95EE;&#x9898;&#x7684;&#x6C42;&#x89E3;&#x601D;&#x8DEF;&#x5927;&#x4F53;&#x4E0A;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x548C;MC&#x6709;&#x4E24;&#x4E2A;&#x4E3B;&#x8981;&#x7684;&#x4E0D;&#x540C;&#x70B9;:</p>
+<p><strong>&#x4E00;&#x4E2A;&#x662F;$G_t$&#x6536;&#x83B7;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x4E0D;&#x540C;</strong></p>
+<p><script type="math/tex; ">G(t) = R_{t+1} + \gamma v(S_{t+1})</script></p>
+<p><strong>&#x4E8C;&#x662F;&#x8FED;&#x4EE3;&#x7684;&#x7CFB;&#x6570;&#x7A0D;&#x5FAE;&#x6709;&#x4E9B;&#x4E0D;&#x540C;&#xFF0C;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x5B8C;&#x6574;&#x7684;&#x5E8F;&#x5217;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x6B21;&#x6570;N&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x7528;&#x4E00;&#x4E2A;[0,1]&#x7684;&#x7CFB;&#x6570;&#x6765;&#x4EE3;&#x66FF;</strong></p>
+<p><script type="math/tex; ">V\left(S_{t}\right)=V\left(S_{t}\right)+\alpha\left(G_{t}-V\left(S_{t}\right)\right)</script></p>
+<p>&#x5177;&#x4F53;&#x7684;&#x4F8B;&#x5B50;&#x8BF7;&#x53C2;&#x8003;&#x76F8;&#x5E94;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x8FD9;&#x91CC;&#x5199;&#x7684;&#x7279;&#x522B;&#x7684;&#x6E05;&#x695A;&#xFF01;GO TO URL</p>
+<p><strong>&#x4ECE;&#x4F8B;&#x5B50;&#x4E2D;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;MC&#x548C;TD&#x4E3B;&#x8981;&#x7684;&#x51E0;&#x70B9;&#x533A;&#x522B;&#xFF1A;</strong></p>
+<ol>
+<li>&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#x5728;&#x77E5;&#x9053;&#x7ED3;&#x679C;&#x4E4B;&#x524D;&#x5C31;&#x53EF;&#x4EE5;&#x5B66;&#x4E60;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x6CA1;&#x6709;&#x7ED3;&#x679C;&#x65F6;&#x5B66;&#x4E60;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x6301;&#x7EED;&#x8FDB;&#x884C;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x5B66;&#x4E60;&#xFF0C;&#x800C;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x5219;&#x8981;&#x7B49;&#x5230;&#x6700;&#x540E;&#x7ED3;&#x679C;&#x624D;&#x80FD;&#x5B66;&#x4E60;&#xFF0C;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#x53EF;&#x4EE5;&#x66F4;&#x5FEB;&#x901F;&#x7075;&#x6D3B;&#x7684;&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x4F30;&#x8BA1;&#xFF0C;&#x8FD9;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x6709;&#x7740;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x5B9E;&#x9645;&#x610F;&#x4E49;&#x3002;&#x2018;</li>
+<li>&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#x5728;&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x662F;TD &#x76EE;&#x6807;&#x503C;&#xFF0C;&#x5373;&#x57FA;&#x4E8E;&#x5373;&#x65F6;&#x5956;&#x52B1;&#x548C;&#x4E0B;&#x4E00;&#x72B6;&#x6001;&#x7684;&#x9884;&#x4F30;&#x4EF7;&#x503C;&#x6765;&#x66FF;&#x4EE3;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x5728;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x7ED3;&#x675F;&#x65F6;&#x53EF;&#x80FD;&#x5F97;&#x5230;&#x7684;&#x6536;&#x83B7;&#xFF0C;&#x662F;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x7684;&#x6709;&#x504F;&#x4F30;&#x8BA1;&#xFF0C;&#x800C;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x5219;&#x4F7F;&#x7528;&#x5B9E;&#x9645;&#x7684;&#x6536;&#x83B7;&#x6765;&#x66F4;&#x65B0;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#xFF0C;&#x662F;&#x67D0;&#x4E00;&#x7B56;&#x7565;&#x4E0B;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x7684;&#x65E0;&#x504F;&#x4F30;&#x8BA1;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x5360;&#x4F18;&#x3002;</li>
+<li>&#x867D;&#x7136;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#x5F97;&#x5230;&#x7684;&#x4EF7;&#x503C;&#x662F;&#x6709;&#x504F;&#x4F30;&#x8BA1;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x65B9;&#x5DEE;&#x5374;&#x6BD4;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x5F97;&#x5230;&#x7684;&#x65B9;&#x5DEE;&#x8981;&#x4F4E;&#xFF0C;&#x4E14;&#x5BF9;&#x521D;&#x59CB;&#x503C;&#x654F;&#x611F;&#xFF0C;&#x901A;&#x5E38;&#x6BD4;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x66F4;&#x52A0;&#x9AD8;&#x6548;&#x3002;</li>
+</ol>
+<p>&#x6240;&#x4EE5;&#x540E;&#x7EED;&#x7684;&#x4E3B;&#x6D41;&#x7684;&#x5F3A;&#x5316;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x7684;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x6587;&#x7AE0;&#x4E5F;&#x4F1A;&#x4E3B;&#x8981;&#x57FA;&#x4E8E;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6765;&#x62D3;&#x5C55;&#x8BA8;&#x8BBA;&#x3002;</p>
+<p>SUMMARY: &#x5B9E;&#x9645;&#x4E0A;TD&#x548C;&#x5BF9;&#x5E94;&#x7684;DP&#x6700;&#x5927;&#x7684;&#x533A;&#x522B;&#x5C31;&#x5728;&#x4E8E;G(t)&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x4ECE;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x4F53;&#x73B0;&#x51FA;DP&#x4E3B;&#x8981;&#x4F9D;&#x9760;&#x7684;&#x662F;&#x5F53;&#x524D;&#x503C;&#x518D;&#x6240;&#x6709;&#x51FA;&#x73B0;&#x7684;&#x5E8F;&#x5217;&#x4E2D;&#x7684;&#x72B6;&#x6001;&#x503C;&#x7684;&#x5E73;&#x5747;&#xFF0C;&#x800C;TD&#x53EF;&#x4EE5;&#x4F9D;&#x9760;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x9012;&#x63A8;&#x7684;&#x8FD9;&#x70B9;&#x4F18;&#x52BF;&#x3002;</p>
+<h2 id="n&#x6B65;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;"><a name="n&#x6B65;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;" class="anchor-navigation-ex-anchor" href="#n&#x6B65;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. n&#x6B65;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;</h2>
+<p>&#x524D;&#x9762;&#x6211;&#x4EEC;&#x7684;&#x9012;&#x63A8;&#x5F0F;&#x53EA;&#x8003;&#x8651;&#x4E86;&#x4E00;&#x6B65;&#x5DEE;&#x5206;&#x6765;&#x8FDB;&#x884C;&#x8FD1;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5DEE;&#x5206;&#x5F0F;&#x5B50;&#x53D8;&#x5F62;&#xFF0C;&#x53D8;&#x6210;&#x4E8C;&#x6B21;&#x5DEE;&#x5206;&#x9879;</p>
+<p><script type="math/tex; ">G_t^{(2)} = R_{t+1} + \gamma R_{t+2} + \gamma^2 V(S_{t+1})</script></p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x7C7B;&#x63A8;&#x5230;n&#x6B65;&#x7684;&#x5DEE;&#x5206;&#x9879;&#xFF0C;&#x5F53;n&#x8D8B;&#x4E8E;&#x65E0;&#x7A77;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x7B49;&#x4EF7;&#x4E8E;MC&#x65B9;&#x6CD5;&#x4E86;&#x3002;</p>
+<h2 id="td&#xFF08;lambda&#xFF09;"><a name="td&#xFF08;lambda&#xFF09;" class="anchor-navigation-ex-anchor" href="#td&#xFF08;lambda&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3. TD&#xFF08;$\lambda$&#xFF09;</h2>
+<p>n&#x6B65;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x9009;&#x62E9;&#x591A;&#x5C11;&#x6B65;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x8D85;&#x53C2;&#x6570;&#x8C03;&#x4F18;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x4E3A;&#x4E86;&#x518D;&#x4E0D;&#x589E;&#x52A0;&#x8BA1;&#x7B97;&#x590D;&#x6742;&#x5EA6;&#x7684;&#x65F6;&#x5019;&#x7EFC;&#x5408;&#x8003;&#x8651;&#x6240;&#x6709;&#x6B65;&#x6570;&#x7684;&#x9884;&#x6D4B;&#xFF0C;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x7684;[0,1]&#x7684;&#x53C2;&#x6570;&#x3BB;&#xFF0C;&#x5B9A;&#x4E49;&#x3BB;-&#x6536;&#x83B7;&#x662F;n&#x4ECE;1&#x5230;&#x221E;&#x6240;&#x6709;&#x6B65;&#x7684;&#x6536;&#x83B7;*&#x6743;&#x91CD;&#x7684;&#x548C;&#xFF0C;&#x6BCF;&#x4E00;&#x6B65;&#x7684;&#x6743;&#x91CD;&#x5E26;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x6BD4;&#x4F8B;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><script type="math/tex; ">G_t^\lambda = (1-\lambda)\sum_{n=1}^\infin \lambda^{n-1}G_t^{(n)}</script></p>
+<p>&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x5F97;&#x5230;TD&#xFF08;&#x3BB;&#xFF09;&#x7684;&#x8FED;&#x4EE3;&#x516C;&#x5F0F;&#xFF1A;Q&#x4E5F;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#xFF0C;&#x5C31;&#x4E0D;&#x91CD;&#x65B0;&#x5199;&#x4E00;&#x6B21;&#x4E86;</p>
+<p><script type="math/tex; ">V(S_t) = V(S_t)+\alpha(G_t^\lambda - V(S_t)) </script></p>
+<p>&#x6743;&#x91CD;&#x8870;&#x51CF;&#x7684;&#x539F;&#x56E0;&#x5982;&#x4E0B;&#xFF0C;&#x968F;&#x7740;n&#x589E;&#x5927;&#xFF0C;&#x6743;&#x91CD;&#x6210;&#x96C6;&#x5408;&#x7EA7;&#x6570;&#x8870;&#x51CF;&#xFF0C;&#x5728;T&#x65F6;&#x523B;&#x628A;&#x6240;&#x6709;&#x5269;&#x4F59;&#x7684;&#x6743;&#x91CD;&#x7ED9;&#x6700;&#x7EC8;&#x72B6;&#x6001;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x6743;&#x91CD;&#x5609;&#x79BE;&#x4E3A;1&#xFF0C;&#x91CC;&#x5F53;&#x524D;&#x8D8A;&#x8FDC;&#x6743;&#x91CD;&#x8D8A;&#x5C0F;&#x3002;</p>
+<p><img src="https://raw.githubusercontent.com/AikenH/md-image/master/img/1042406-20180824163740251-607605293.jpg" alt="https://raw.githubusercontent.com/AikenH/md-image/master/img/1042406-20180824163740251-607605293.jpg"></p>
+<p>&#x4ECE;&#x524D;&#x5411;&#x6765;&#x770B;TD(&#x3BB;)&#xFF0C; &#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;V(St)&#x7531;Gt&#x5F97;&#x5230;&#xFF0C;&#x800C;Gt&#x53C8;&#x95F4;&#x63A5;&#x7531;&#x6240;&#x6709;&#x540E;&#x7EED;&#x72B6;&#x6001;&#x4EF7;&#x503C;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x66F4;&#x65B0;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x9700;&#x8981;&#x77E5;&#x9053;&#x6240;&#x6709;&#x540E;&#x7EED;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x7ECF;&#x5386;&#x5B8C;&#x6574;&#x7684;&#x72B6;&#x6001;&#x5E8F;&#x5217;&#x83B7;&#x5F97;&#x5305;&#x62EC;&#x7EC8;&#x6B62;&#x72B6;&#x6001;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x7684;&#x5373;&#x65F6;&#x5956;&#x52B1;&#x624D;&#x80FD;&#x66F4;&#x65B0;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x7684;&#x4EF7;&#x503C;&#x3002;&#x8FD9;&#x548C;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x7684;&#x8981;&#x6C42;&#x4E00;&#x6837;&#xFF0C;&#x56E0;&#x6B64;TD(&#x3BB;)&#x6709;&#x7740;&#x548C;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x4E00;&#x6837;&#x7684;&#x52A3;&#x52BF;&#x3002;&#x5F53;&#x3BB;=0 &#x65F6;,&#x5C31;&#x662F;&#x7B2C;&#x4E8C;&#x8282;&#x8BB2;&#x5230;&#x7684;&#x666E;&#x901A;&#x7684;&#x65F6;&#x5E8F;&#x5DEE;&#x5206;&#x6CD5;&#xFF0C;&#x5F53;&#x3BB;=1 &#x65F6;,&#x5C31;&#x662F;&#x8499;&#x7279;&#x5361;&#x7F57;&#x6CD5;&#x3002;</p>
+<p>&#x4ECE;&#x53CD;&#x5411;&#x6765;&#x770B;TD(&#x3BB;)&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x5206;&#x6790;&#x6211;&#x4EEC;&#x72B6;&#x6001;&#x5BF9;&#x540E;&#x7EED;&#x72B6;&#x6001;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x6BD4;&#x5982;&#x8001;&#x9F20;&#x5728;&#x4F9D;&#x6B21;&#x8FDE;&#x7EED;&#x63A5;&#x53D7;&#x4E86;3 &#x6B21;&#x54CD;&#x94C3;&#x548C;1 &#x6B21;&#x4EAE;&#x706F;&#x4FE1;&#x53F7;&#x540E;&#x906D;&#x5230;&#x4E86;&#x7535;&#x51FB;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x5206;&#x6790;&#x906D;&#x7535;&#x51FB;&#x7684;&#x539F;&#x56E0;&#x65F6;&#xFF0C;&#x5230;&#x5E95;&#x662F;&#x54CD;&#x94C3;&#x7684;&#x56E0;&#x7D20;&#x8F83;&#x91CD;&#x8981;&#x8FD8;&#x662F;&#x4EAE;&#x706F;&#x7684;&#x56E0;&#x7D20;&#x66F4;&#x91CD;&#x8981;&#x5462;&#xFF1F;&#x5982;&#x679C;&#x628A;&#x8001;&#x9F20;&#x906D;&#x5230;&#x7535;&#x51FB;&#x7684;&#x539F;&#x56E0;&#x8BA4;&#x4E3A;&#x662F;&#x4E4B;&#x524D;&#x63A5;&#x53D7;&#x4E86;&#x8F83;&#x591A;&#x6B21;&#x6570;&#x7684;&#x54CD;&#x94C3;&#xFF0C;&#x5219;&#x79F0;&#x8FD9;&#x79CD;&#x5F52;&#x56E0;&#x4E3A;&#x9891;&#x7387;&#x542F;&#x53D1;(frequency heuristic) &#x5F0F;&#xFF1B;&#x800C;&#x628A;&#x7535;&#x51FB;&#x5F52;&#x56E0;&#x4E8E;&#x6700;&#x8FD1;&#x5C11;&#x6570;&#x51E0;&#x6B21;&#x72B6;&#x6001;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5219;&#x79F0;&#x4E3A;&#x5C31;&#x8FD1;&#x542F;&#x53D1;(recency heuristic) &#x5F0F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7ED9;&#x6BCF;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#xFF1A;&#x6548;&#x7528;(eligibility, E) &#x6765;&#x8868;&#x793A;&#x8BE5;&#x72B6;&#x6001;&#x5BF9;&#x540E;&#x7EED;&#x72B6;&#x6001;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5229;&#x7528;&#x5230;&#x4E0A;&#x8FF0;&#x4E24;&#x4E2A;&#x542F;&#x53D1;&#x3002;&#x800C;&#x6240;&#x6709;&#x72B6;&#x6001;&#x7684;&#x6548;&#x7528;&#x503C;&#x603B;&#x79F0;&#x4E3A;&#x6548;&#x7528;&#x8FF9;(eligibility traces,ES)&#x3002;&#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;</p>
+<p><script type="math/tex; ">\begin{gathered}E_{0}(s)=0 \\E_{t}(s)=\gamma \lambda E_{t-1}(s)+1\left(S_{t}=s\right)=\left\{\begin{array}{ll}0 & t<k \\(\gamma \lambda)^{t-k} & t \geq k\end{array}, \text { s.t. } \lambda, \gamma \in[0,1], s \text { is visited once at time } k\right.\end{gathered}</script></p>
+<p><img src="https://raw.githubusercontent.com/AikenH/md-image/master/img/20200218133233516.png" alt="https://raw.githubusercontent.com/AikenH/md-image/master/img/20200218133233516.png"></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x8981;&#x662F;&#x91CD;&#x590D;&#x51FA;&#x73B0;&#x7684;&#x8BDD;&#x90FD;&#x4F1A;&#x8BA9;&#x6548;&#x7528;&#x8FF9;&#x589E;&#x52A0;&#xFF0C;&#x4E0D;&#x7136;&#x7684;&#x8BDD;&#x5C31;&#x4F1A;&#x4E00;&#x76F4;&#x8870;&#x51CF;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x6700;&#x7EC8;TD&#xFF08;&#x3BB;&#xFF09;&#x7684;&#x80A1;&#x7968;&#x516C;&#x5F0F;&#x5C31;&#x53EF;&#x4EE5;&#x66F4;&#x65B0;&#x4E3A;&#xFF1A;&#xFF08;&#x53CD;&#x5411;&#x516C;&#x5F0F;&#x8FD9;&#x5E94;&#x8BE5;&#x662F;&#xFF09;</p>
+<p><script type="math/tex; ">\begin{gathered}\delta_{t}=R_{t+1}+\gamma v\left(S_{t+1}\right)-V\left(S_{t}\right) \\V\left(S_{t}\right)=V\left(S_{t}\right)+\alpha \delta_{t} E_{t}(s)\end{gathered}</script></p>
+<p>&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x8FD9;&#x4E24;&#x4E2A;&#x516C;&#x5F0F;&#x662F;&#x5B58;&#x5728;&#x4E00;&#x81F4;&#x6027;&#x7684;&#x3002;</p>
+<h2 id="td&#x63A7;&#x5236;&#x95EE;&#x9898;&#x6C42;&#x89E3;"><a name="td&#x63A7;&#x5236;&#x95EE;&#x9898;&#x6C42;&#x89E3;" class="anchor-navigation-ex-anchor" href="#td&#x63A7;&#x5236;&#x95EE;&#x9898;&#x6C42;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>6.4. TD&#x63A7;&#x5236;&#x95EE;&#x9898;&#x6C42;&#x89E3;</h2>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x8FD8;&#x662F;&#x4F7F;&#x7528;&#x540C;&#x6837;&#x7684;&#x3B5;-&#x8D2A;&#x5A6A;&#x8FDB;&#x884C;&#x7B56;&#x7565;&#x548C;&#x4EF7;&#x503C;&#x8FED;&#x4EE3;&#x3002;</p>
+<p>&#x5728;&#x7EBF;&#x63A7;&#x5236;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x662F;SARSA&#x7B97;&#x6CD5;</p>
+<p>&#x79BB;&#x7EBF;&#x63A7;&#x5236;&#x6BD4;&#x5728;&#x7EBF;&#x63A7;&#x5236;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x7B56;&#x7565;&#xFF0C;&#x7528;&#x8D2A;&#x5A6A;&#x53D1;&#x6765;&#x66F4;&#x65B0;&#x4EF7;&#x503C;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E00;&#x6837;&#x7684;&#x6765;&#x8FDB;&#x884C;&#x52A8;&#x4F5C;&#x9009;&#x62E9;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x662F;Q-Learning&#x7B97;&#x6CD5;&#x3002; </p>
+<footer class="page-footer"><span class="copyright">&#xA9; AikenHong all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-09-26 00:08:36
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="SS_OD_SoftTeacher.html" class="navigation navigation-prev " aria-label="Previous page: P4:SS OD SoftTeacher">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Reward_is_enough.html" class="navigation navigation-next " aria-label="Next page: P1:Reward Is Enough">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RL强化学习","level":"6.7","depth":1,"next":{"title":"P1:Reward Is Enough","level":"6.7.1","depth":2,"path":"Papers/Reward_is_enough.md","ref":"Papers/Reward_is_enough.md","articles":[]},"previous":{"title":"P4:SS OD SoftTeacher","level":"6.6.4","depth":2,"path":"Papers/SS_OD_SoftTeacher.md","ref":"Papers/SS_OD_SoftTeacher.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-summary","-katex","mathjax-pro","anchor-navigation-ex-toc","search-plus","-lunr","-search","splitter","copy-code-button","github","theme-comscore","-latex-codecogs","tbfed-pagefooter","-expandable-chapters-small","edit-link-plus","expandable-chapters","pageview-count","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy AikenHong","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/AikenH"},"livereload":{},"splitter":{},"edit-link-plus":{"label":{"en":"Edit This Page","zh":"编辑本页"},"base":"http://github.com/AikenH/Docs/tree/main"},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"pageview-count":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://gitee.com/Aiken97/markdown-image/raw/master/img/20210927180958.png","style":"background: none; max-height: 120px; min-height: 120px"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"AikenHong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aiken's Blogs","gitbook":"*"},"file":{"path":"Papers/RL.md","mtime":"2021-09-25T16:08:36.107Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-28T06:09:26.927Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

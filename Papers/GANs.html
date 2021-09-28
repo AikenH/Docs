@@ -1,0 +1,1286 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GANs 生成对抗网络 · Aiken's Blogs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="AikenHong">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Causal Analysis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Intro</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Algorithm 算法分析</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Algorithms/">
+            
+                <a href="../Algorithms/">
+            
+                    
+                    INTRO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Algorithms/Astar.html">
+            
+                <a href="../Algorithms/Astar.html">
+            
+                    
+                    Astar寻路算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Envs 环境配置</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <span>
+            
+                    
+                    Devs 开发环境
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../Envs/SSH.html">
+            
+                <a href="../Envs/SSH.html">
+            
+                    
+                    C0:SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../Envs/GitGithub.html">
+            
+                <a href="../Envs/GitGithub.html">
+            
+                    
+                    C1:GitGithub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../Envs/Docker.html">
+            
+                <a href="../Envs/Docker.html">
+            
+                    
+                    C2:Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../Envs/GoogleColab.html">
+            
+                <a href="../Envs/GoogleColab.html">
+            
+                    
+                    C3:GoogleColab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../Envs/VSCode.html">
+            
+                <a href="../Envs/VSCode.html">
+            
+                    
+                    C4:VSCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../Experiment/MLFlow.html">
+            
+                <a href="../Experiment/MLFlow.html">
+            
+                    
+                    C5:MLFlow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    Notes 笔记环境
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../Envs/Gitbook.html">
+            
+                <a href="../Envs/Gitbook.html">
+            
+                    
+                    环境部署：Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../Envs/Vimtutor.html">
+            
+                <a href="../Envs/Vimtutor.html">
+            
+                    
+                    Chapter1：Vimtutor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../Envs/Spacevim.html">
+            
+                <a href="../Envs/Spacevim.html">
+            
+                    
+                    Chapter2：Spacevim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../Envs/Vimnote.html">
+            
+                <a href="../Envs/Vimnote.html">
+            
+                    
+                    Chapter3：Vimnote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.5" data-path="../Envs/PicBed.html">
+            
+                <a href="../Envs/PicBed.html">
+            
+                    
+                    图床：PicBed
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" >
+            
+                <span>
+            
+                    
+                    Sys 系统环境
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../Envs/Linux.html">
+            
+                <a href="../Envs/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../Envs/Windows.html">
+            
+                <a href="../Envs/Windows.html">
+            
+                    
+                    Windows
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Experiment 实验内容</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Experiment/NerualNetworkTraining.html">
+            
+                <a href="../Experiment/NerualNetworkTraining.html">
+            
+                    
+                    C1:NerualNetworkTraining
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../Experiment/Hyper_Resolution.html">
+            
+                <a href="../Experiment/Hyper_Resolution.html">
+            
+                    
+                    C2:Hyper Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../Experiment/Survey_2019.html">
+            
+                <a href="../Experiment/Survey_2019.html">
+            
+                    
+                    C3:Survey2019
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../Experiment/Using_Judgment_Instead_of_Annotation.html">
+            
+                <a href="../Experiment/Using_Judgment_Instead_of_Annotation.html">
+            
+                    
+                    E1:Using Judgment Instead Of Annotation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../Experiment/UniversalFramework.html">
+            
+                <a href="../Experiment/UniversalFramework.html">
+            
+                    
+                    E2:UniversalFramework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" >
+            
+                <span>
+            
+                    
+                    Dataset 数据集
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.6.1" data-path="../Datas/Emotion_dataset.html">
+            
+                <a href="../Datas/Emotion_dataset.html">
+            
+                    
+                    D1:Emotion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.2" data-path="../Datas/Facial expression and Emotion.html">
+            
+                <a href="../Datas/Facial expression and Emotion.html">
+            
+                    
+                    D2:Facial Expression
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.3" data-path="../Datas/FashionDataset.html">
+            
+                <a href="../Datas/FashionDataset.html">
+            
+                    
+                    D3:Fashion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6.4" data-path="../Datas/ImageCaptionRequirement.html">
+            
+                <a href="../Datas/ImageCaptionRequirement.html">
+            
+                    
+                    D4:ImageCaption
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Langs 语言</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../Langs/Cpp.html">
+            
+                <a href="../Langs/Cpp.html">
+            
+                    
+                    Cpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" >
+            
+                <span>
+            
+                    
+                    笔记语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.2.1" data-path="../Langs/Markdown.html">
+            
+                <a href="../Langs/Markdown.html">
+            
+                    
+                    L1:Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2.2" data-path="../Langs/Latex.html">
+            
+                <a href="../Langs/Latex.html">
+            
+                    
+                    L2:Latex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    Python相关
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.3.1" data-path="../Langs/Python.html">
+            
+                <a href="../Langs/Python.html">
+            
+                    
+                    L1:Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.2" data-path="../Langs/Extensible_Markup_Language.html">
+            
+                <a href="../Langs/Extensible_Markup_Language.html">
+            
+                    
+                    L2:标记语言：Extensible Markup Language
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.3" data-path="../Langs/PyTorch.html">
+            
+                <a href="../Langs/PyTorch.html">
+            
+                    
+                    L3:PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3.4" data-path="../Langs/PythonTips.html">
+            
+                <a href="../Langs/PythonTips.html">
+            
+                    
+                    L4:PythonTips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../Langs/Shell.html">
+            
+                <a href="../Langs/Shell.html">
+            
+                    
+                    Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Papers 论文阅读</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" >
+            
+                <span>
+            
+                    
+                    Transformer
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="Attention.html">
+            
+                <a href="Attention.html">
+            
+                    
+                    P1:Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="Transformer.html">
+            
+                <a href="Transformer.html">
+            
+                    
+                    P2:Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="OpenWorldLearning.html">
+            
+                <a href="OpenWorldLearning.html">
+            
+                    
+                    OpenWorldLearning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.2.1" data-path="OpenMix.html">
+            
+                <a href="OpenMix.html">
+            
+                    
+                    P1:OpenMix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.2" data-path="OpenWorld_Object_Detector.html">
+            
+                <a href="OpenWorld_Object_Detector.html">
+            
+                    
+                    P2:OpenWorld Object Detector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2.3" data-path="KnowledgeEvolution.html">
+            
+                <a href="KnowledgeEvolution.html">
+            
+                    
+                    P3:KnowledgeEvolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" >
+            
+                <span>
+            
+                    
+                    Backbone网路骨架
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.3.1" data-path="EfficientNet.html">
+            
+                <a href="EfficientNet.html">
+            
+                    
+                    B1:EfficientNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.2" data-path="Involution.html">
+            
+                <a href="Involution.html">
+            
+                    
+                    B2:Involution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.3" data-path="Pooling.html">
+            
+                <a href="Pooling.html">
+            
+                    
+                    B3:Pooling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3.4" data-path="../Algorithms/HardTask.html">
+            
+                <a href="../Algorithms/HardTask.html">
+            
+                    
+                    B4:HardTask
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="Causal Analysis.html">
+            
+                <a href="Causal Analysis.html">
+            
+                    
+                    Causal Analysis 因果分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.5" data-path="GANs.html">
+            
+                <a href="GANs.html">
+            
+                    
+                    GANs 生成对抗网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" >
+            
+                <span>
+            
+                    
+                    WeakSupervised
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.6.1" data-path="MoCo_V3.html">
+            
+                <a href="MoCo_V3.html">
+            
+                    
+                    P1:MoCo V3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6.2" data-path="FSL.html">
+            
+                <a href="FSL.html">
+            
+                    
+                    P2:FSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6.3" data-path="FSL0.html">
+            
+                <a href="FSL0.html">
+            
+                    
+                    P3:FSL0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6.4" data-path="SS_OD_SoftTeacher.html">
+            
+                <a href="SS_OD_SoftTeacher.html">
+            
+                    
+                    P4:SS OD SoftTeacher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="RL.html">
+            
+                <a href="RL.html">
+            
+                    
+                    RL强化学习
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.7.1" data-path="Reward_is_enough.html">
+            
+                <a href="Reward_is_enough.html">
+            
+                    
+                    P1:Reward Is Enough
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.2" data-path="DouZero.html">
+            
+                <a href="DouZero.html">
+            
+                    
+                    P2:DouZero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7.3" data-path="MobaAI_Tencent.html">
+            
+                <a href="MobaAI_Tencent.html">
+            
+                    
+                    P3:MobaAI Tencent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" >
+            
+                <span>
+            
+                    
+                    其他调研
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.8.1" data-path="NIPS中国预讲会.html">
+            
+                <a href="NIPS中国预讲会.html">
+            
+                    
+                    NIPS中国预讲会
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >GANs 生成对抗网络</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#fgan&#xFF1A;&#x5BF9;gan&#x7406;&#x8BBA;&#x7684;&#x6DF1;&#x5EA6;&#x7406;&#x89E3;"><b>1. </b>`fGAN&#xFF1A;&#x5BF9;GAN&#x7406;&#x8BBA;&#x7684;&#x6DF1;&#x5EA6;&#x7406;&#x89E3;</a></li><ul><li><span class="title-icon "></span><a href="#&#x57FA;&#x672C;&#x7406;&#x8BBA;&#x4F53;&#x7CFB;&#x548C;&#x63A8;&#x6F14;"><b>1.1. </b>&#x57FA;&#x672C;&#x7406;&#x8BBA;&#x4F53;&#x7CFB;&#x548C;&#x63A8;&#x6F14;</a></li><ul><li><span class="title-icon "></span><a href="#fenchel-conjugate&#x5171;&#x8F6D;"><b>1.1.1. </b>Fenchel Conjugate&#x5171;&#x8F6D;</a></li><li><span class="title-icon "></span><a href="#f-div-gan&#x63A8;&#x5BFC;"><b>1.1.2. </b>F-Div GAN&#x63A8;&#x5BFC;</a></li></ul><li><span class="title-icon "></span><a href="#js-div&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;div"><b>1.2. </b>JS Div&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;Div</a></li><ul><li><span class="title-icon "></span><a href="#lsgan&#x6700;&#x5C0F;&#x4E8C;&#x4E58;"><b>1.2.1. </b>LSGAN&#x6700;&#x5C0F;&#x4E8C;&#x4E58;</a></li><li><span class="title-icon "></span><a href="#wasserstein-gan"><b>1.2.2. </b>Wasserstein-GAN</a></li></ul></ul></ul></div><a href="#fgan&#xFF1A;&#x5BF9;gan&#x7406;&#x8BBA;&#x7684;&#x6DF1;&#x5EA6;&#x7406;&#x89E3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="fgan&#xFF1A;&#x5BF9;gan&#x7406;&#x8BBA;&#x7684;&#x6DF1;&#x5EA6;&#x7406;&#x89E3;"><a name="fgan&#xFF1A;&#x5BF9;gan&#x7406;&#x8BBA;&#x7684;&#x6DF1;&#x5EA6;&#x7406;&#x89E3;" class="anchor-navigation-ex-anchor" href="#fgan&#xFF1A;&#x5BF9;gan&#x7406;&#x8BBA;&#x7684;&#x6DF1;&#x5EA6;&#x7406;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>1. `fGAN&#xFF1A;&#x5BF9;GAN&#x7406;&#x8BBA;&#x7684;&#x6DF1;&#x5EA6;&#x7406;&#x89E3;</h1>
+<p>@Aiken 2021 onenote&#x90E8;&#x5206;&#x7684;&#x62D3;&#x5C55;&#x7F16;&#x5199;&#xFF0C;&#x5230;&#x65F6;&#x5019;&#x62F7;&#x8FC7;&#x53BB;&#xFF0C;&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x3002;</p>
+<p>fGAN: &#x4E0D;&#x53EA;&#x662F;JS-Div&#x6563;&#x5EA6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;<strong>&#x5C06;&#x6240;&#x6709;&#x7684;&#x6563;&#x5EA6;&#x90FD;&#x5E94;&#x7528;&#x5230;GANs&#x7684;&#x6846;&#x67B6;</strong>&#x4E2D;&#x3002;&#x8BE5;&#x90E8;&#x5206;&#x7684;&#x9605;&#x8BFB;&#x662F;&#x5BF9;GAN&#x7684;&#x57FA;&#x672C;&#x7406;&#x8BBA;&#x6700;&#x91CD;&#x8981;&#x7684;&#x6587;&#x7AE0;&#x4E4B;&#x4E00;&#x3002;</p>
+<h2 id="&#x57FA;&#x672C;&#x7406;&#x8BBA;&#x4F53;&#x7CFB;&#x548C;&#x63A8;&#x6F14;"><a name="&#x57FA;&#x672C;&#x7406;&#x8BBA;&#x4F53;&#x7CFB;&#x548C;&#x63A8;&#x6F14;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x7406;&#x8BBA;&#x4F53;&#x7CFB;&#x548C;&#x63A8;&#x6F14;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x57FA;&#x672C;&#x7406;&#x8BBA;&#x4F53;&#x7CFB;&#x548C;&#x63A8;&#x6F14;</h2>
+<p>&#x9996;&#x5148;&#x7ED9;&#x51FA;fGAN&#x4E2D;&#x63D0;&#x51FA;&#x7684;&#x57FA;&#x672C;&#x7406;&#x8BBA;&#xFF1A;&#x53EF;&#x4EE5;&#x5C06;&#x6240;&#x6709;&#x7684;Div&#x653E;&#x5165;GANs&#x7684;&#x6846;&#x67B6;&#x4E2D;&#xFF0C;&#x6765;&#x505A;&#x90A3;&#x4E2A;&#x6838;&#x5FC3;&#x7684;&#x5173;&#x952E;&#x6F14;&#x5316;&#x5224;&#x522B;&#x6307;&#x6807;&#xFF1A;
+<script type="math/tex; ">
+D_{f}(P||Q) = \int_xq(x)f(\frac{p(x)}{q(x)}dx)
+</script>
+&#x4E0A;&#x8FF0;&#x516C;&#x5F0F;&#x5C06;&#x8861;&#x91CF;P&#x548C;Q&#x4E24;&#x4E2A;&#x5206;&#x5E03;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x8DDD;&#xFF0C;&#x516C;&#x5F0F;&#x4E2D;&#x7684;$f$&#x53EF;&#x4EE5;&#x662F;&#x5F88;&#x591A;&#x4E0D;&#x540C;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x6C42;&#x6EE1;&#x8DB3;&#x5982;&#x4E0B;&#x7684;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#xFF1A;</p>
+<ol>
+<li>&#x662F;&#x4E00;&#x4E2A;&#x51F8;&#x51FD;&#x6570;&#xFF1B;$f(\frac{(x1+x2)}{2})\leq \frac{[f(x1)+f(x2)]}{2}$&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x56FD;&#x5185;&#x5916;&#x7684;&#x51F9;&#x51F8;&#x76F8;&#x53CD;</li>
+<li>$f(1)=0$&#x3002;</li>
+</ol>
+<p>&#x800C;&#x6211;&#x4EEC;&#x77E5;&#x9053;$q(x)$&#x662F;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#x5206;&#x5E03;&#x51FD;&#x6570;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x53EF;&#x4EE5;&#x770B;&#x6210;&#x51F8;&#x51FD;&#x6570;&#x6027;&#x8D28;&#x7684;&#x63A8;&#x5E7F;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BC1;&#x5F97;&#xFF1A;
+<script type="math/tex; ">
+D_{f}(P||Q) = \int_xq(x)f(\frac{p(x)}{q(x)}dx) \geq
+f(\int q(x) \frac{p(x)}{q(x)} dx) = f(1) = 0
+</script></p>
+<p>&#x663E;&#x7136;&#x5F53;&#x6211;&#x4EEC;&#x53D6;&#x5F97;&#x5408;&#x9002;&#x7684;f&#xFF0C;KL&#xFF08;$f(x) = xlog(x)$&#xFF09;; ReverseKL($-log(x)$)&#xFF1B;chi square ($f(x) = (x-1)^2$)&#xFF1B;</p>
+<h3 id="fenchel-conjugate&#x5171;&#x8F6D;"><a name="fenchel-conjugate&#x5171;&#x8F6D;" class="anchor-navigation-ex-anchor" href="#fenchel-conjugate&#x5171;&#x8F6D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. Fenchel Conjugate&#x5171;&#x8F6D;</h3>
+<p>&#x8865;&#x5145;Fenchel&#x5171;&#x8F6D;&#x7684;&#x77E5;&#x8BC6;&#x6765;&#x5BF9;&#x540E;&#x7EED;&#x7684;fGAN&#x63A8;&#x5BFC;&#x8FDB;&#x884C;&#x8865;&#x5145;&#xFF0C;&#x5B9A;&#x7406;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x6BCF;&#x4E2A;&#x51F8;&#x51FD;&#x6570;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x5171;&#x8F6D;&#x51FD;&#x6570;&#x8BFB;&#x4F5C;$f^*(x)$
+<script type="math/tex; ">
+f^*(x) = \max \limits_{x\in dom(f)} xt - f(x)
+</script>
+t&#x662F;&#x7ED9;&#x5B9A;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;t&#xFF0C; $xt-f(x)$&#x5BF9;&#x5E94;&#x4E86;&#x65E0;&#x6570;&#x6761;&#x76F4;&#x7EBF;&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/AikenH/md-image/master/img/image-20210214232437350.png" alt="image-20210214232437350"></p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;$f(x)=xlog(x)$&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x5BF9;&#x5E94;&#x7684;$f^*(x)$&#x753B;&#x51FA;&#x6765;&#x3002;</p>
+<p><img src="https://raw.githubusercontent.com/AikenH/md-image/master/img/image-20210214233459633.png" alt="image-20210214233459633"></p>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x5BF9;&#x7ED9;&#x5B9A;&#x7684;t&#xFF0C;&#x6C42;$g(x)$&#x5171;&#x8F6D;&#x65B9;&#x7A0B;&#x7684;&#x6700;&#x5927;&#x503C;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x6C42;&#x4E2A;&#x5BFC;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x89E3;&#x5F97;$x-&gt;t$&#x7136;&#x540E;&#x5E26;&#x56DE;&#x5C31;&#x80FD;&#x5F97;&#x5230;&#x5171;&#x8F6D;&#x65B9;&#x7A0B;&#x3002;  </p>
+<p>&#x4ECB;&#x7ECD;&#x5171;&#x8F6D;&#x65B9;&#x7A0B;&#x4E3B;&#x8981;&#x662F;&#x4E3A;&#x4E86;&#x548C;$f(x)$&#x8FDB;&#x884C;&#x8F6C;&#x5316;
+<script type="math/tex; ">
+f^{*}(t)=\sup _{x \in \operatorname{dom}(f)}\{x t-f(x)\} \quad \Leftrightarrow \quad f(x)=\max _{t \in \operatorname{dom}\left(f^{*}\right)}\left\{x t-f^{*}(t)\right\}
+</script></p>
+<h3 id="f-div-gan&#x63A8;&#x5BFC;"><a name="f-div-gan&#x63A8;&#x5BFC;" class="anchor-navigation-ex-anchor" href="#f-div-gan&#x63A8;&#x5BFC;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. F-Div GAN&#x63A8;&#x5BFC;</h3>
+<p>&#x5C06;&#x8F6C;&#x5316;&#x65B9;&#x7A0B;&#x5E26;&#x5165;&#xFF0C;&#x5229;&#x7528;&#x7B80;&#x5355;&#x7684;&#x4E0D;&#x7B49;&#x5F0F;&#x8F6C;&#x5316;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x5C06;&#x4E4B;&#x524D;&#x7684;F-Div&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;GAN&#x7684;&#x5F0F;&#x5B50;&#xFF1A;
+<script type="math/tex; ">
+\begin{aligned}
+D_{f}(P \| Q) &=\int_{x} q(x) f\left(\frac{p(x)}{q(x)}\right) d x \\
+&=\int_{x} q(x)\left(\max _{t \in \operatorname{dom}\left(f^{*}\right)}\left\{\frac{p(x)}{q(x)} t-f^{*}(t)\right\}\right) d x \\
+& \geqslant \int_{x} q(x)\left(\frac{p(x)}{q(x)} D(x)-f^{*}(D(x))\right) d x \\
+&=\int_{x} p(x) D(x) d x-\int_{x} q(x) f^{*}(D(x)) d x \\
+& \approx \max _{D} \int_{x} p(x) D(x) d x-\int_{x} q(x) f^{*}(D(x)) d x
+\end{aligned}
+</script>
+&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#xFF1A;&#x7B2C;&#x4E09;&#x884C;&#x5C31;&#x662F;&#x7531;&#x4E8E;t&#x662F;&#x968F;&#x4FBF;&#x53D6;&#x503C;&#x7684;&#xFF1B;&#x6700;&#x540E;&#x4E00;&#x884C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x6C42;&#x4E00;&#x4E2A;D&#x4F7F;&#x5F97;&#x5F0F;&#x5B50;&#x6700;&#x5927;&#xFF0C;&#x4E0A;&#x754C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x7B2C;&#x4E8C;&#x884C;&#x7684;&#x5F0F;&#x5B50;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x63A8;&#x5BFC;&#x51FA;F-Div&#x7684;&#x53D8;&#x4F53;&#xFF1A;
+<script type="math/tex; ">
+\begin{aligned}
+D_{f}(P \| Q) & \approx \max _{D} \int_{x} p(x) D(x) d x-\int_{x} q(x) f^{*}(D(x)) d x \\
+&=\max _{D}\left\{E_{x \sim P}[D(x)]-E_{x \sim Q}\left[f^{*}(D(x))\right]\right\}
+\end{aligned}
+</script>
+&#x5BF9;&#x4E8E;&#x751F;&#x6210;&#x5668;&#x6765;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x662F;&#x8981;&#x627E;&#x5230;&#x4E00;&#x4E2A;PG&#x4F7F;&#x5F97;&#xFF1A;
+<script type="math/tex; ">
+\begin{aligned}
+G^{*} &=\arg \min _{G} D_{f}\left(P_{\text {data }} \| P_{G}\right) \\
+&=\arg \min _{G} \max _{D}\left\{E_{x \sim P_{\text {data }}}[D(x)]-E_{x \sim P_{G}}\left[f^{*}(D(x))\right]\right\} \\
+&=\arg \min _{G} \max _{D} V(G, D)
+\end{aligned}
+</script>
+&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x7684;&#x63A8;&#x5BFC;&#x8FC7;&#x7A0B;&#x5C31;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;Div Function&#xFF0C;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;Div&#x8DDD;&#x79BB;&#x76F4;&#x63A5;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x51FD;&#x6570;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<h2 id="js-div&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;div"><a name="js-div&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;div" class="anchor-navigation-ex-anchor" href="#js-div&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;div"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. JS Div&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;Div</h2>
+<p>&#x7531;&#x4E8E;&#x5206;&#x5E03;&#x7684;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x662F;&#x6CA1;&#x6709;&#x91CD;&#x5408;&#x7684;&#xFF0C;&#x4F7F;&#x7528;JS Div&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5F88;&#x96BE;&#x8861;&#x91CF;&#x51FA;&#x4ED6;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;<strong>Equally Bad</strong></p>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5206;&#x5E03;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x91CD;&#x5408;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E24;&#x4E2A;&#x5206;&#x5E03;&#x7684; JS Div &#x4F1A;&#x662F;&#x4E00;&#x6837;&#x7684;?</p>
+<p>&#x524D;&#x9762;&#x6709;&#x63D0;&#x5230;&#xFF0C;JS Div &#x662F;&#x901A;&#x8FC7;&#x5224;&#x522B;&#x5668;&#x8BA1;&#x7B97;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x800C;&#x5224;&#x522B;&#x5668;&#x7684;&#x672C;&#x8D28;&#x662F;&#x4E8C;&#x5206;&#x7C7B;&#x5668;&#xFF0C;&#x53EA;&#x8981;$P<em>G$&#x4E0E;$P</em>{data}$&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x91CD;&#x5408;&#xFF0C;&#x5224;&#x522B;&#x5668;&#x5C31;&#x80FD; 100%&#x5730;&#x9274;&#x522B;&#x51FA;$P<em>G(x)$&#x4E0E;$P</em>{data}(x)$ &#x7684;&#x5DEE;&#x5F02;&#xFF0C;&#x56E0;&#x6B64;&#x4E8C;&#x8005;&#x7684; JS Div &#x5C31;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+</blockquote>
+<h3 id="lsgan&#x6700;&#x5C0F;&#x4E8C;&#x4E58;"><a name="lsgan&#x6700;&#x5C0F;&#x4E8C;&#x4E58;" class="anchor-navigation-ex-anchor" href="#lsgan&#x6700;&#x5C0F;&#x4E8C;&#x4E58;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. LSGAN&#x6700;&#x5C0F;&#x4E8C;&#x4E58;</h3>
+<p>&#x89E3;&#x51B3;&#x7684;&#x5C31;&#x662F;&#x6CA1;&#x6709;&#x91CD;&#x5408;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x89E3;&#x51B3;&#x601D;&#x8DEF;&#x5982;&#x4E0B;&#xFF1A;&#x8BA9;&#x5224;&#x522B;&#x5668;&#x59CB;&#x7EC8;&#x90FD;&#x4E0D;&#x80FD;100%&#x7684;&#x9274;&#x522B;&#x51FA;&#x5DEE;&#x5F02;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x4FDD;&#x8BC1;&#x5728;&#x6CA1;&#x6709;&#x91CD;&#x5408;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x80FD;&#x5206;&#x8FA8;&#x51FA;&#x5DEE;&#x5F02;&#x7A0B;&#x5EA6;&#x3002;</p>
+<p><img src="https://raw.githubusercontent.com/AikenH/md-image/master/img/image-20210215001057797.png" alt="image-20210215001057797" style="zoom:50%;"></p>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x7684;D&#x592A;&#x597D;&#x7684;&#x65F6;&#x5019;&#xFF08;&#x80FD;&#x5C06;&#x6570;&#x636E;&#x5B8C;&#x5168;&#x5206;&#x5F00;&#xFF09;&#x8FD9;&#x79CD;&#x65F6;&#x5019;&#x751F;&#x6210;&#x5668;&#x5C31;&#x4F18;&#x5316;&#x4E0D;&#x4E86;&#x4E86;&#xFF0C;&#x4E5F;&#x662F;Equal Bad&#x5E26;&#x6765;&#x7684;&#x6700;&#x5927;&#x95EE;&#x9898;&#x3002;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;&#x6700;&#x7EC8;&#x7684;&#x6FC0;&#x6D3B;&#x4ECE;sigmoid&#x6362;&#x6210;linear&#x6FC0;&#x6D3B;&#x5C42;&#xFF0C;&#x8FD9;&#x6837;&#x8BAD;&#x7EC3;&#x51FA;&#x6765;&#x7684;D&#x5C31;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x7EBF;&#x6027;&#x7684;&#x76F4;&#x7EBF;&#xFF0C;</p>
+<p><img src="https://raw.githubusercontent.com/AikenH/md-image/master/img/image-20210215001105089.png" alt="image-20210215001105089" style="zoom:50%;"></p>
+<p>&#x8FD9;&#x6837;&#x53EA;&#x6709;&#x5F53;&#x5B8C;&#x5168;&#x91CD;&#x5408;&#x7684;&#x65F6;&#x5019;D&#x624D;&#x4F1A;&#x662F;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x68AF;&#x5EA6;&#x7684;&#x76F4;&#x7EBF;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x4E5F;&#x5E76;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x7684;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x800C;&#x53EA;&#x662F;&#x7ED5;&#x5F00;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x771F;&#x6B63;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x6838;&#x5FC3;&#x95EE;&#x9898;&#x7684;&#x662F;&#x4E0B;&#x9762;&#x7684;WGAN</p>
+<h3 id="wasserstein-gan"><a name="wasserstein-gan" class="anchor-navigation-ex-anchor" href="#wasserstein-gan"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. Wasserstein-GAN</h3>
+<p>&#x6838;&#x5FC3;&#x601D;&#x60F3;&#xFF1A;<strong>&#x7528;Wasserstrin&#x8DDD;&#x79BB;&#xFF08;EM&#x8DDD;&#x79BB;&#xFF09;&#x53D6;&#x4EE3;JS&#x8DDD;&#x79BB;</strong> </p>
+<footer class="page-footer"><span class="copyright">&#xA9; AikenHong all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-09-26 00:08:35
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Causal Analysis.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Causal Analysis 因果分析">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GANs 生成对抗网络","level":"6.5","depth":1,"next":{"title":"WeakSupervised","level":"6.6","depth":1,"ref":"","articles":[{"title":"P1:MoCo V3","level":"6.6.1","depth":2,"path":"Papers/MoCo_V3.md","ref":"Papers/MoCo_V3.md","articles":[]},{"title":"P2:FSL","level":"6.6.2","depth":2,"path":"Papers/FSL.md","ref":"Papers/FSL.md","articles":[]},{"title":"P3:FSL0","level":"6.6.3","depth":2,"path":"Papers/FSL0.md","ref":"Papers/FSL0.md","articles":[]},{"title":"P4:SS OD SoftTeacher","level":"6.6.4","depth":2,"path":"Papers/SS_OD_SoftTeacher.md","ref":"Papers/SS_OD_SoftTeacher.md","articles":[]}]},"previous":{"title":"Causal Analysis 因果分析","level":"6.4","depth":1,"path":"Papers/Causal Analysis.md","ref":"Papers/Causal Analysis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-summary","-katex","mathjax-pro","anchor-navigation-ex-toc","search-plus","-lunr","-search","splitter","copy-code-button","github","theme-comscore","-latex-codecogs","tbfed-pagefooter","-expandable-chapters-small","edit-link-plus","expandable-chapters","pageview-count","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy AikenHong","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/AikenH"},"livereload":{},"splitter":{},"edit-link-plus":{"label":{"en":"Edit This Page","zh":"编辑本页"},"base":"http://github.com/AikenH/Docs/tree/main"},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"theme-comscore":{},"pageview-count":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://gitee.com/Aiken97/markdown-image/raw/master/img/20210927180958.png","style":"background: none; max-height: 120px; min-height: 120px"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"AikenHong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aiken's Blogs","gitbook":"*"},"file":{"path":"Papers/GANs.md","mtime":"2021-09-25T16:08:35.863Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-28T06:09:26.927Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
