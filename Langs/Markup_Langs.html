@@ -1,0 +1,1725 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.3 Json, Xml, Csv with py · Aiken's Blogs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="AikenHong">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex-toc/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PyTorch.html" />
+    
+    
+    <link rel="prev" href="Latex.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Dev Envs</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Envs/readme.html">
+            
+                <a href="../Envs/readme.html">
+            
+                    
+                    Chaper1 Dev Env
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../Envs/Windows.html">
+            
+                <a href="../Envs/Windows.html">
+            
+                    
+                    1 Windows
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../Envs/PicBed.html">
+            
+                <a href="../Envs/PicBed.html">
+            
+                    
+                    1.1 PicBed Setting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../Envs/VSCode.html">
+            
+                <a href="../Envs/VSCode.html">
+            
+                    
+                    1.2 VsCode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../Envs/GoogleColab.html">
+            
+                <a href="../Envs/GoogleColab.html">
+            
+                    
+                    1.3 Colab
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Envs/Linux.html">
+            
+                <a href="../Envs/Linux.html">
+            
+                    
+                    2 Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../Envs/Spacevim.html">
+            
+                <a href="../Envs/Spacevim.html">
+            
+                    
+                    2.1 Deploy SpaceVim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../Envs/VimConfig.html">
+            
+                <a href="../Envs/VimConfig.html">
+            
+                    
+                    2.2 Deploy Nvim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../Envs/Vimtutor.html">
+            
+                <a href="../Envs/Vimtutor.html">
+            
+                    
+                    2.3 Vim Baisc Usage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Envs/SSH.html">
+            
+                <a href="../Envs/SSH.html">
+            
+                    
+                    3 init SSH
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../Envs/GitGithub.html">
+            
+                <a href="../Envs/GitGithub.html">
+            
+                    
+                    3.1 init Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../Envs/Gitbook.html">
+            
+                <a href="../Envs/Gitbook.html">
+            
+                    
+                    4 Deploy Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../Envs/Docker.html">
+            
+                <a href="../Envs/Docker.html">
+            
+                    
+                    5 Docker & K8S
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Basic Knowledges</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    Chapter2 Langs 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../Envs/NoteEditor.md">
+            
+                <span>
+            
+                    
+                    0 Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="Python.html">
+            
+                <a href="Python.html">
+            
+                    
+                    1 Pyhon
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="PythonTips.html">
+            
+                <a href="PythonTips.html">
+            
+                    
+                    1.1 Python Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="fluent_python.html">
+            
+                <a href="fluent_python.html">
+            
+                    
+                    1.2 Fluent Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="Cpp.html">
+            
+                <a href="Cpp.html">
+            
+                    
+                    2 Cpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="CPP要点辨析与补充">
+            
+                <span>
+            
+                    
+                    2.1 Cpp's data strucutre
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="Shell.html">
+            
+                <a href="Shell.html">
+            
+                    
+                    3 Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="Markup_readme.html">
+            
+                <a href="Markup_readme.html">
+            
+                    
+                    4. Markup Langs
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.5.1" data-path="Markdown.html">
+            
+                <a href="Markdown.html">
+            
+                    
+                    4.1 Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5.2" data-path="Latex.html">
+            
+                <a href="Latex.html">
+            
+                    
+                    4.2 LaTex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.5.3" data-path="Markup_Langs.html">
+            
+                <a href="Markup_Langs.html">
+            
+                    
+                    4.3 Json, Xml, Csv with py
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="PyTorch.html">
+            
+                <a href="PyTorch.html">
+            
+                    
+                    5. PyTorch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Machine Learning</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../Papers/notes.html">
+            
+                <a href="../Papers/notes.html">
+            
+                    
+                    Chapter3 Papers And Algos
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../Papers/Component.html">
+            
+                <a href="../Papers/Component.html">
+            
+                    
+                    0 Component
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1.1" data-path="../Papers/Involution.html">
+            
+                <a href="../Papers/Involution.html">
+            
+                    
+                    0.1 Involution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.2" data-path="../Papers/Pooling.html">
+            
+                <a href="../Papers/Pooling.html">
+            
+                    
+                    0.2 Pooling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.3" data-path="../Algorithms/HardTask.html">
+            
+                <a href="../Algorithms/HardTask.html">
+            
+                    
+                    0.3 HardTask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.4" data-path="../Papers/Attention.html">
+            
+                <a href="../Papers/Attention.html">
+            
+                    
+                    0.4 Attention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.5" data-path="../Papers/EfficientNet.html">
+            
+                <a href="../Papers/EfficientNet.html">
+            
+                    
+                    0.5 EfficientNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.6" data-path="../Papers/Transformer.html">
+            
+                <a href="../Papers/Transformer.html">
+            
+                    
+                    0.6 Transformer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.7" data-path="../Papers/MIM-V-MAE.html">
+            
+                <a href="../Papers/MIM-V-MAE.html">
+            
+                    
+                    0.7 MIM-MAE 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.8" data-path="../Papers/MIM-V-iBOT.html">
+            
+                <a href="../Papers/MIM-V-iBOT.html">
+            
+                    
+                    0.8 MIM-iBoT 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.9" data-path="../Papers/MIM-V-simMIM.html">
+            
+                <a href="../Papers/MIM-V-simMIM.html">
+            
+                    
+                    0.9 MIM-simMIM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.10" data-path="../Papers/Loss-WhyZero.html">
+            
+                <a href="../Papers/Loss-WhyZero.html">
+            
+                    
+                    0.10 Loss-Not0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.11" data-path="../Papers/Loss-SmoothSharpen.html">
+            
+                <a href="../Papers/Loss-SmoothSharpen.html">
+            
+                    
+                    0.11 Loss-Smooth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.1.12" data-path="../Papers/Loss-NCE.html">
+            
+                <a href="../Papers/Loss-NCE.html">
+            
+                    
+                    0.12 Loss-NCE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../Papers/OWL-survey.html">
+            
+                <a href="../Papers/OWL-survey.html">
+            
+                    
+                    1 Open World Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.2.1" data-path="../Papers/OW-openmix.html">
+            
+                <a href="../Papers/OW-openmix.html">
+            
+                    
+                    1.1 OpenMix
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2.2" data-path="../Papers/OW-OD.html">
+            
+                <a href="../Papers/OW-OD.html">
+            
+                    
+                    1.2 OpenWorld Object Detector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2.3" data-path="../Papers/KnowledgeEvolution.html">
+            
+                <a href="../Papers/KnowledgeEvolution.html">
+            
+                    
+                    1.3 KnowledgeEvolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2.4" data-path="../Papers/LT-Collection.html">
+            
+                <a href="../Papers/LT-Collection.html">
+            
+                    
+                    1.4 Long-Tailed Collation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../Experiment/Using_Judgment_Instead_of_Annotation.html">
+            
+                <a href="../Experiment/Using_Judgment_Instead_of_Annotation.html">
+            
+                    
+                    2 Weak Supervised
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.3.1" data-path="../Papers/FSL前期调研.html">
+            
+                <a href="../Papers/FSL前期调研.html">
+            
+                    
+                    2.0 FSL Survey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3.2" data-path="../Papers/FSL-Collection.html">
+            
+                <a href="../Papers/FSL-Collection.html">
+            
+                    
+                    2.0 R2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3.3" data-path="../Papers/SSL-MoCov3.html">
+            
+                <a href="../Papers/SSL-MoCov3.html">
+            
+                    
+                    2.1 MoCo V3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3.4" data-path="../Papers/SS_OD_SoftTeacher.html">
+            
+                <a href="../Papers/SS_OD_SoftTeacher.html">
+            
+                    
+                    2.2 SoftTeacher
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../Papers/GANs.html">
+            
+                <a href="../Papers/GANs.html">
+            
+                    
+                    3. GANs 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.4.1" data-path="../Papers/StyleGAN.html">
+            
+                <a href="../Papers/StyleGAN.html">
+            
+                    
+                    3.1 StyleGAN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../Papers/RL-C1.html">
+            
+                <a href="../Papers/RL-C1.html">
+            
+                    
+                    4. Reinforcement Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.5.1" data-path="../Papers/RL-Reward_is_enough.html">
+            
+                <a href="../Papers/RL-Reward_is_enough.html">
+            
+                    
+                    4.1 Reward Is Enough
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5.2" data-path="../Papers/RL-DouZero.html">
+            
+                <a href="../Papers/RL-DouZero.html">
+            
+                    
+                    4.2 DouZero
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5.3" data-path="../Papers/RL-MobaAI_Tencent.html">
+            
+                <a href="../Papers/RL-MobaAI_Tencent.html">
+            
+                    
+                    4.3 MobaAI Tencent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../Papers/Incremental_Learning.md">
+            
+                <span>
+            
+                    
+                    5. Incremental Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.6.1" data-path="../Papers/IL-MGSvF.html">
+            
+                <a href="../Papers/IL-MGSvF.html">
+            
+                    
+                    5.1 MgSvF
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../Algorithms/">
+            
+                <a href="../Algorithms/">
+            
+                    
+                    6. Algorithms
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.7.1" data-path="../Algorithms/Astar.html">
+            
+                <a href="../Algorithms/Astar.html">
+            
+                    
+                    6.1 Astar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7.2" data-path="../Algorithms/Hungarian.html">
+            
+                <a href="../Algorithms/Hungarian.html">
+            
+                    
+                    6.2 Hungarian
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" >
+            
+                <span>
+            
+                    
+                    Others
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.8.1" data-path="../Papers/NIPS中国预讲会.html">
+            
+                <a href="../Papers/NIPS中国预讲会.html">
+            
+                    
+                    NIPS20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8.2" data-path="../Papers/YOLOv4.html">
+            
+                <a href="../Papers/YOLOv4.html">
+            
+                    
+                    YOLOv4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8.3" data-path="../Papers/Causal_Analysis.html">
+            
+                <a href="../Papers/Causal_Analysis.html">
+            
+                    
+                    Causal_Analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8.4" data-path="../Experiment/Hyper_Resolution.html">
+            
+                <a href="../Experiment/Hyper_Resolution.html">
+            
+                    
+                    Survey: Hyper Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <span>
+            
+                    
+                    Chapter4 Develop Your NN
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" >
+            
+                <span>
+            
+                    
+                    1. Design 
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1.1" data-path="../Experiment/并行训练的理解.html">
+            
+                <a href="../Experiment/并行训练的理解.html">
+            
+                    
+                    1.1 Parallel Compute Theory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../Experiment/NerualNetworkTraining.html">
+            
+                <a href="../Experiment/NerualNetworkTraining.html">
+            
+                    
+                    2. Training
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.2.1" data-path="../Experiment/DataAugmentation.html">
+            
+                <a href="../Experiment/DataAugmentation.html">
+            
+                    
+                    2.1 Data Augmentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2.2" >
+            
+                <span>
+            
+                    
+                    [2.2 ]
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" >
+            
+                <span>
+            
+                    
+                    3. Visulize
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" >
+            
+                <span>
+            
+                    
+                    4. Manage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.4.1" data-path="../Experiment/MLFlow.html">
+            
+                <a href="../Experiment/MLFlow.html">
+            
+                    
+                    4.1 ML Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Jobs</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" >
+            
+                <span>
+            
+                    
+                    Chapter5 Hunting Jobs
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../JobHunting/IntView_笔试题型和框架总结.html">
+            
+                <a href="../JobHunting/IntView_笔试题型和框架总结.html">
+            
+                    
+                    1. 笔试题型和框架总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../JobHunting/IntView_面试补充.html">
+            
+                <a href="../JobHunting/IntView_面试补充.html">
+            
+                    
+                    2. 机器学习补充资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../JobHunting/IntView_刷题笔记.html">
+            
+                <a href="../JobHunting/IntView_刷题笔记.html">
+            
+                    
+                    3. 个人刷题完整笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4.3 Json, Xml, Csv with py</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#read-local-data"><b>1. </b>Read Local Data</a></li><ul><li><span class="title-icon "></span><a href="#python-glob"><b>1.1. </b>Python: Glob</a></li><ul><li><span class="title-icon "></span><a href="#globglob"><b>1.1.1. </b>glob.glob:</a></li><li><span class="title-icon "></span><a href="#globiglob"><b>1.1.2. </b>glob.iglob()</a></li></ul><li><span class="title-icon "></span><a href="#python&#xFF1A;pickle"><b>1.2. </b>Python&#xFF1A;pickle</a></li><li><span class="title-icon "></span><a href="#yaml"><b>1.3. </b>YAML</a></li><ul><li><span class="title-icon "></span><a href="#&#x5199;&#x5728;&#x524D;&#x9762;"><b>1.3.1. </b>&#x5199;&#x5728;&#x524D;&#x9762;</a></li><li><span class="title-icon "></span><a href="#yaml-python"><b>1.3.2. </b>YAML-Python</a></li><li><span class="title-icon "></span><a href="#yaml&#x7684;&#x5199;&#x5165;"><b>1.3.3. </b>YAML&#x7684;&#x5199;&#x5165;</a></li></ul><li><span class="title-icon "></span><a href="#json"><b>1.4. </b>JSON</a></li><ul><li><span class="title-icon "></span><a href="#json-python"><b>1.4.1. </b>Json-Python</a></li></ul><li><span class="title-icon "></span><a href="#xml"><b>1.5. </b>XML</a></li><li><span class="title-icon "></span><a href="#csv"><b>1.6. </b>CSV</a></li><ul><li><span class="title-icon "></span><a href="#write"><b>1.6.1. </b>write</a></li><li><span class="title-icon "></span><a href="#read"><b>1.6.2. </b>read</a></li></ul></ul></ul></div><a href="#read-local-data" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="read-local-data"><a name="read-local-data" class="anchor-navigation-ex-anchor" href="#read-local-data"><i class="fa fa-link" aria-hidden="true"></i></a>1. Read Local Data</h1>
+<p>@Aiken  2021 </p>
+<p>&#x5BF9;&#x4E8E;&#x5404;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x6807;&#x8BB0;&#x6587;&#x6863;&#x548C;&#x6570;&#x636E;&#x96C6;&#x7684;&#x5904;&#x7406;&#x8FDB;&#x884C;&#x4E00;&#x4E2A;&#x6574;&#x5408;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;python&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x6A21;&#x5757;&#xFF08;&#x6BD4;&#x6BD4;&#x5982;glob&#xFF0C;&#x540E;&#x7EED;&#x53EF;&#x80FD;&#x4F1A;&#x8FC1;&#x79FB;&#x5230;&#x522B;&#x7684;&#x6587;&#x6863;&#x4E2D;&#xFF09;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#xFF1A;yaml&#xFF0C;json&#xFF0C;csv&#xFF0C;xml&#xFF0C;&#x8FD9;&#x4E9B;&#x53EF;&#x62D3;&#x5C55;&#x7684;&#x6807;&#x8BB0;&#x8BED;&#x8A00;.</p>
+<p><strong>TODO&#xFF1A;</strong></p>
+<ul>
+<li>[ ] csv,xml&#xFF1A;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x770B;&#x4E00;&#x4E0B;&#x5409;&#x4EF2;&#x5E08;&#x5144;&#x90A3;&#x8FB9;&#x662F;&#x600E;&#x4E48;&#x5B58;&#x548C;&#x53D6;&#x6587;&#x4EF6;&#x7684;&#xFF0C;&#x7EE7;&#x627F;&#x4E00;&#x4E0B;&#x4EE3;&#x7801;&#x51CF;&#x5C11;&#x6211;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;</li>
+<li>[ ] &#x6309;&#x7167;csv&#x6587;&#x4EF6;&#x5BF9;&#x6570;&#x636E;&#x96C6;&#x8FDB;&#x884C;&#x672C;&#x5730;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x5207;&#x5206;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x5F88;&#x591A;&#x6570;&#x636E;&#x96C6;&#xFF0C;&#x50CF;mini-imageNet&#x8FD9;&#x7C7B;&#x7684;&#x662F;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x4E4B;&#x540E;&#x6309;&#x7167;csv&#x6587;&#x4EF6;&#x5BF9;&#x8BAD;&#x7EC3;&#x96C6;&#x548C;&#x6D4B;&#x8BD5;&#x96C6;&#x8FDB;&#x884C;&#x5207;&#x5206;&#x7684;</li>
+<li>[ ] &#x4F7F;&#x7528;sklearn&#x5BF9;&#x5B8C;&#x6574;&#x7684;&#x672A;&#x5207;&#x5206;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5207;&#x5206;&#x3002;</li>
+</ul>
+<h2 id="python-glob"><a name="python-glob" class="anchor-navigation-ex-anchor" href="#python-glob"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Python: Glob</h2>
+<p>&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x76F8;&#x5173;&#x6A21;&#x5757;&#xFF0C;&#x7528;&#x4E8E;&#x7B80;&#x5355;&#x7684;&#x8DEF;&#x5F84;&#x5339;&#x914D;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x7528;&#x6765;&#x67E5;&#x627E;&#x8DEF;&#x5F84;&#x4E2D;&#x7684;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#xFF0C;&#x57FA;&#x672C;&#x7684;&#x6B63;&#x5219;&#x5339;&#x914D;&#x89C4;&#x5219;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>&#x201C;*&#x201D;: &#x5339;&#x914D;0&#x54E5;&#x6216;&#x591A;&#x4E2A;&#x5B57;&#x7B26;</p>
+<p>&#x201C;?&#x201D; : &#x5339;&#x914D;&#x5355;&#x4E2A;&#x5B57;&#x7B26;</p>
+<p>&#x201C;[ ]&#x201D;: &#x5339;&#x914D;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x5B57;&#x7B26;,&#x5982;[0-9]&#x5339;&#x914D;&#x6240;&#x6709;&#x7684;&#x6570;&#x5B57;</p>
+</blockquote>
+<h3 id="globglob"><a name="globglob" class="anchor-navigation-ex-anchor" href="#globglob"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. glob.glob:</h3>
+<p><strong>&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x5339;&#x914D;&#x7684;&#x8DEF;&#x5F84;&#x5217;&#x8868;</strong>,&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x53C2;&#x6570;pathname,&#x5B9A;&#x4E00;&#x4E50;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x7684;&#x5339;&#x914D;&#x89C4;&#x5219;,&#x53EF;&#x4EE5;&#x662F;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6216;&#x8005;&#x662F;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;,&#x5177;&#x4F53;&#x7684;&#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x7684;&#x65B9;&#x5F0F;:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">for</span> xmlpath <span class="token keyword">in</span> glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span><span class="token string">&apos;media/all/DATAPART/&apos;</span> <span class="token operator">+</span> <span class="token string">&quot;*&quot;</span><span class="token punctuation">)</span>
+<span class="token comment"># xmlpath &#x904D;&#x5386;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;</span>
+
+<span class="token keyword">for</span> xmlpath <span class="token keyword">in</span> glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span>xmlpath <span class="token operator">+</span> <span class="token string">&quot;/*/*&quot;</span><span class="token punctuation">)</span>
+<span class="token comment"># xmlpath &#x904D;&#x5386;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x6587;&#x4EF6;:&#x6309;&#x7167;&#x5C42;&#x6570;&#x81EA;&#x7531;&#x8BBE;&#x5B9A;</span>
+
+img_path <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>images<span class="token punctuation">,</span> <span class="token string">&apos;*.npy&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x904D;&#x5386;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;&#x6240;&#x6709;npy&#x6587;&#x4EF6;,&#x8BF4;&#x5B9E;&#x8BDD;&#x611F;&#x89C9;&#x8FD9;&#x4E2A;&#x602A;&#x79BB;&#x8C31;&#x7684;,&#x665A;&#x70B9;&#x8BD5;&#x4E00;&#x4E0B;</span>
+
+<span class="token keyword">import</span> glob 
+<span class="token keyword">print</span><span class="token punctuation">(</span>glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span><span class="token string">r&quot;E:/imgdir/*/*.jpg&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="globiglob"><a name="globiglob" class="anchor-navigation-ex-anchor" href="#globiglob"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. glob.iglob()</h3>
+<p><strong>&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x53EF;&#x904D;&#x5386;&#x5BF9;&#x8C61;</strong>&#x4F7F;&#x7528;&#x5B83;&#x53EF;&#x4EE5;&#x9010;&#x4E2A;&#x83B7;&#x53D6;&#x5339;&#x914D;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x540D;:</p>
+<ul>
+<li>glob:&#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x5168;&#x90E8;</li>
+<li>iglob:&#x9010;&#x4E2A;&#x5339;&#x914D;&#x8DEF;&#x5F84;&#x83B7;&#x53D6;.</li>
+</ul>
+<h2 id="python&#xFF1A;pickle"><a name="python&#xFF1A;pickle" class="anchor-navigation-ex-anchor" href="#python&#xFF1A;pickle"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Python&#xFF1A;pickle</h2>
+<p>palceholder</p>
+<h2 id="yaml"><a name="yaml" class="anchor-navigation-ex-anchor" href="#yaml"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. YAML</h2>
+<p>YAML&#x662F;&#x4E00;&#x79CD;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;YAML&#x5B9A;&#x4E49;&#x8D85;&#x53C2;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x5916;&#x90E8;&#x5F15;&#x5165;&#xFF0C;&#x6240;&#x4EE5;&#x5E38;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x4E00;&#x4E9B;&#x7279;&#x5B9A;&#x7684;config&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x7528;&#x53D1;&#x548C;&#x7528;&#x9014;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x7406;&#x89E3;&#xFF1A;</p>
+<ul>
+<li>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;backbone module&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x5BF9;&#x4E8E;&#x8D85;&#x53C2;&#x6570;&#x7B49;&#x7B49;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x914D;&#x7F6E;&#x662F;&#x4E0D;&#x6052;&#x5B9A;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;config&#x6587;&#x4EF6;&#x53BB;&#x914D;&#x7F6E;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x6BCF;&#x6B21;&#x5207;&#x6362;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EA;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x4E0D;&#x540C;&#x7684;config&#x6587;&#x4EF6;&#x5C31;&#x884C;&#x4E86;&#x3002;</li>
+<li>&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;argparse&#x7684;&#x4E00;&#x79CD;&#x66FF;&#x4EE3;</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#x672C;&#x6587;&#x6863;&#x805A;&#x7126;&#x4E8E;&#x5982;&#x4F55;&#x5728;<code>python/cpp</code>&#x4E2D;&#x8BFB;&#x53D6;yaml&#xFF08;&#x4EE5;&#x53CA;cpp&#x8865;&#x5145;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF09;</p>
+<h3 id="&#x5199;&#x5728;&#x524D;&#x9762;"><a name="&#x5199;&#x5728;&#x524D;&#x9762;" class="anchor-navigation-ex-anchor" href="#&#x5199;&#x5728;&#x524D;&#x9762;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x5199;&#x5728;&#x524D;&#x9762;</h3>
+<p>&#x57FA;&#x672C;&#x7684;&#x8BED;&#x6CD5;&#x4EC0;&#x4E48;&#x7684;&#x5F88;&#x597D;&#x641C;&#x7D22;&#xFF0C;&#x968F;&#x4FBF;&#x767E;&#x5EA6;&#x4E00;&#x4E0B;&#x5C31;&#x884C;&#x4E86;</p>
+<ul>
+<li><a href="https://yaml.org/" target="_blank">offical site</a></li>
+<li><a href="https://www.runoob.com/w3cnote/yaml-intro.html" target="_blank">&#x83DC;&#x9E1F;&#x5165;&#x95E8;&#x6559;&#x7A0B;</a></li>
+</ul>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#x5927;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x4F7F;&#x7528;&#x7F29;&#x8FDB;&#x53BB;&#x63A7;&#x5236;&#x7684;&#xFF0C;&#x4F8B;&#x5B50;&#x1F447;&#xFF0C;&#x5F88;&#x660E;&#x663E;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#x5173;&#x7CFB;&#xFF0C;&#x5305;&#x62EC;&#x5B57;&#x5178;&#xFF0C;boolean&#xFF0C;float&#x7B49;&#x5176;&#x4ED6;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token comment"># default num_head = 2</span>
+<span class="token key atrule">criterions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">PerformanceLoss</span><span class="token punctuation">:</span>
+    <span class="token key atrule">def_file</span><span class="token punctuation">:</span> ./loss/SoftmaxLoss.py
+    <span class="token key atrule">loss_params</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token key atrule">optim_params</span><span class="token punctuation">:</span> <span class="token null important">null</span>
+    <span class="token key atrule">weight</span><span class="token punctuation">:</span> <span class="token number">1.0</span>
+<span class="token key atrule">last</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token comment"># apply incremental pca to remove main components</span>
+<span class="token key atrule">apply_ipca</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">num_components</span><span class="token punctuation">:</span> <span class="token number">512</span>
+
+<span class="token key atrule">networks</span><span class="token punctuation">:</span>
+  <span class="token key atrule">classifier</span><span class="token punctuation">:</span>
+    <span class="token key atrule">def_file</span><span class="token punctuation">:</span> ./models/CausalNormClassifier.py
+    <span class="token key atrule">optim_params</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token key atrule">lr</span><span class="token punctuation">:</span> <span class="token number">0.2</span><span class="token punctuation">,</span> <span class="token key atrule">momentum</span><span class="token punctuation">:</span> <span class="token number">0.9</span><span class="token punctuation">,</span> <span class="token key atrule">weight_decay</span><span class="token punctuation">:</span> <span class="token number">0.0005</span><span class="token punctuation">}</span>
+    <span class="token key atrule">scheduler_params</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token key atrule">coslr</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span class="token punctuation">,</span> <span class="token key atrule">endlr</span><span class="token punctuation">:</span> <span class="token number">0.0</span><span class="token punctuation">,</span> <span class="token key atrule">gamma</span><span class="token punctuation">:</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token key atrule">step_size</span><span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">}</span>
+    <span class="token key atrule">params</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token key atrule">dataset</span><span class="token punctuation">:</span> ImageNet_LT<span class="token punctuation">,</span> <span class="token key atrule">feat_dim</span><span class="token punctuation">:</span> <span class="token number">2048</span><span class="token punctuation">,</span> <span class="token key atrule">num_classes</span><span class="token punctuation">:</span> <span class="token number">1000</span><span class="token punctuation">,</span> <span class="token key atrule">stage1_weights</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token punctuation">,</span> <span class="token key atrule">use_effect</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span class="token punctuation">,</span> <span class="token key atrule">num_head</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token key atrule">tau</span><span class="token punctuation">:</span> <span class="token number">16.0</span><span class="token punctuation">,</span> <span class="token key atrule">alpha</span><span class="token punctuation">:</span> <span class="token number">3.0</span><span class="token punctuation">,</span> <span class="token key atrule">gamma</span><span class="token punctuation">:</span> <span class="token number">0.03125</span><span class="token punctuation">}</span>
+<span class="token key atrule">shuffle</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">training_opt</span><span class="token punctuation">:</span>
+  <span class="token key atrule">backbone</span><span class="token punctuation">:</span> resnext50
+  <span class="token key atrule">batch_size</span><span class="token punctuation">:</span> <span class="token number">512</span>
+  <span class="token key atrule">dataset</span><span class="token punctuation">:</span> ImageNet_LT
+  <span class="token key atrule">display_step</span><span class="token punctuation">:</span> <span class="token number">10</span>
+</code></pre>
+<h3 id="yaml-python"><a name="yaml-python" class="anchor-navigation-ex-anchor" href="#yaml-python"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. YAML-Python</h3>
+<p>&#x4E0B;&#x9762;&#x76F4;&#x63A5;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x57FA;&#x672C;&#x5C31;&#x6309;&#x7167;&#x8FD9;&#x4E2A;&#x683C;&#x5F0F;&#x53BB;&#x7F16;&#x5199;&#x5C31;&#x6CA1;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x4E86;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> yaml
+<span class="token keyword">import</span> os
+<span class="token comment"># &#x901A;&#x5E38;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53BB;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x5E76;&#x8FDB;&#x884C;&#x8BFB;&#x53D6;&#xFF0C;&#x8FD9;&#x91CC;&#x5B9E;&#x9645;&#x4E0A;&#x6D89;&#x53CA;&#x5230;Python&#x7684;IO&#x64CD;&#x4F5C;</span>
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>args<span class="token punctuation">.</span>cfg<span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    config <span class="token operator">=</span> yaml<span class="token punctuation">.</span>load<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+<span class="token comment"># &#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x7F16;&#x5199;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x548C;&#x4E0E;argparse&#x7684;&#x4E00;&#x81F4;&#x6027;&#x4F7F;&#x7528;&#xFF08;&#x6574;&#x5408;&#x540C;&#x4E2A;&#x7528;&#x9014;&#x6216;&#x8005;&#x540C;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF09;&#xFF0C;&#x901A;&#x5E38;&#x4F1A;&#x7F16;&#x5199;update&#x51FD;&#x6570;&#x5C06;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x6574;&#x5408;&#x8D77;&#x6765;</span>
+config <span class="token operator">=</span> update<span class="token punctuation">(</span>config<span class="token punctuation">,</span>args<span class="token punctuation">)</span>
+<span class="token comment"># &#x7136;&#x540E;&#x7528;&#x5B57;&#x5178;&#x7684;&#x65B9;&#x5F0F;&#x5C06;config&#xFF08;yaml&#xFF09;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x90E8;&#x5206;&#x8981;&#x7D20;&#x6309;&#x7167;&#x547D;&#x540D;&#x8BFB;&#x53D6;&#x51FA;&#x6765;</span>
+<span class="token comment"># &#x539F;&#x5219;&#x662F;&#xFF1A;&#x8BA9;&#x8BFB;&#x53D6;&#x51FA;&#x6765;&#x7684;&#x6570;&#x636E;&#x7684;&#x5806;&#x53E0;&#x5C42;&#x6570;&#x4E0D;&#x8981;&#x592A;&#x591A;&#xFF0C;&#x5C3D;&#x91CF;&#x5C31;&#x662F;&#x4E00;&#x4E2A;dict&#x6216;&#x8005;&#x4E00;&#x4E2A;list&#x628A;</span>
+
+<span class="token keyword">def</span> <span class="token function">update</span><span class="token punctuation">(</span>config<span class="token punctuation">,</span>args<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># &#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x53EA;&#x63D0;&#x53D6;&#x51FA;args&#x4E2D;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x8981;&#x7D20;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9012;&#x5F52;&#x8C03;&#x7528;args&#x4E2D;&#x7684;&#x6240;&#x6709;&#x53C2;&#x6570;</span>
+    <span class="token keyword">for</span> k<span class="token punctuation">,</span>v <span class="token keyword">in</span> args<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        config<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> v
+    <span class="token comment"># or write down some interest elements only</span>
+    config<span class="token punctuation">[</span><span class="token string">&apos;element&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">&apos;specific value&apos;</span>
+</code></pre>
+<h3 id="yaml&#x7684;&#x5199;&#x5165;"><a name="yaml&#x7684;&#x5199;&#x5165;" class="anchor-navigation-ex-anchor" href="#yaml&#x7684;&#x5199;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. YAML&#x7684;&#x5199;&#x5165;</h3>
+<h2 id="json"><a name="json" class="anchor-navigation-ex-anchor" href="#json"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. JSON</h2>
+<p>json&#x662F;&#x4E00;&#x79CD;&#x5B58;&#x50A8;&#x548C;&#x4EA4;&#x6362;&#x6587;&#x672C;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x7C7B;&#x4F3C;XML&#x3002;<a href="https://blog.csdn.net/jmu201521121021/article/details/100996404" target="_blank">Link1</a></p>
+<blockquote>
+<p>&#x7ECF;&#x7EAC;&#x5E08;&#x5144;&#x8FD9;&#x5757;&#x662F;&#x6309;&#x7167;coco&#x7684;json&#x683C;&#x5F0F;&#x53BB;&#x6574;&#x7406;&#x7684;&#x6587;&#x6863;&#xFF0C;&#x540C;&#x65F6;&#x6570;&#x636E;&#x7684;&#x5B58;&#x50A8;&#x7528;&#x7684;&#x662F;npy,npz</p>
+</blockquote>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+<span class="token property">&quot;employees&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+<span class="token punctuation">{</span> <span class="token property">&quot;firstName&quot;</span><span class="token operator">:</span><span class="token string">&quot;Bill&quot;</span> <span class="token punctuation">,</span> <span class="token property">&quot;lastName&quot;</span><span class="token operator">:</span><span class="token string">&quot;Gates&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span> <span class="token property">&quot;firstName&quot;</span><span class="token operator">:</span><span class="token string">&quot;George&quot;</span> <span class="token punctuation">,</span> <span class="token property">&quot;lastName&quot;</span><span class="token operator">:</span><span class="token string">&quot;Bush&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span> <span class="token property">&quot;firstName&quot;</span><span class="token operator">:</span><span class="token string">&quot;Thomas&quot;</span> <span class="token punctuation">,</span> <span class="token property">&quot;lastName&quot;</span><span class="token operator">:</span><span class="token string">&quot;Carter&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x770B;VsCode&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x662F;&#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;todo-tree.highlights.customHighlight&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;TODO&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2f3542&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f6b93b&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;iconColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#f39c12&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;issue-opened&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;line&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;FIXME&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;foreground&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#2f3542&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;background&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#e55039&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;iconColour&quot;</span><span class="token operator">:</span> <span class="token string">&quot;#e55039&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;icon&quot;</span><span class="token operator">:</span> <span class="token string">&quot;flame&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;line&quot;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre>
+<p>&#x8BFB;&#x53D6;&#x7684;&#x65F6;&#x5019;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x662F;&#x548C;&#x952E;&#x503C;&#x5BF9;&#x4E00;&#x6837;&#x7684;&#x8BFB;&#x53D6;,&#x7528;dict,</p>
+<h3 id="json-python"><a name="json-python" class="anchor-navigation-ex-anchor" href="#json-python"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. Json-Python</h3>
+<p><strong>&#x9996;&#x5148;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;Json&#x548C;python&#x7684;&#x7C7B;&#x578B;&#x5BF9;&#x7167;&#x8868;</strong></p>
+<table>
+<thead>
+<tr>
+<th>Python</th>
+<th>Json</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dict</td>
+<td>object</td>
+</tr>
+<tr>
+<td>list,tuple</td>
+<td>array</td>
+</tr>
+<tr>
+<td>str</td>
+<td>string</td>
+</tr>
+<tr>
+<td>int float int-&amp;float-derived Enums</td>
+<td>number</td>
+</tr>
+<tr>
+<td>True</td>
+<td>true</td>
+</tr>
+<tr>
+<td>False</td>
+<td>false</td>
+</tr>
+<tr>
+<td>None</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<p>Python&#x4E2D;Json&#x7684;&#x4E3B;&#x8981;&#x5BFC;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7684;&#x65B9;&#x5F0F;&#x4E3B;&#x8981;&#x662F;&#x4F7F;&#x7528;<code>dumps</code>&#x548C;<code>loads</code>&#x5C06;python&#x5BF9;&#x8C61;&#x7F16;&#x5199;&#x6210;json&#x5B57;&#x7B26;&#x4E32;,&#x4EE5;&#x53CA;&#x5BF9;json&#x5B57;&#x7B26;&#x4E32;&#x5728;python&#x4E2D;&#x7F16;&#x7801;</p>
+<p><strong>dumps</strong></p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> json
+data <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> <span class="token string">&apos;a&apos;</span> <span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span> <span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&apos;c&apos;</span> <span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">&apos;d&apos;</span> <span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">&apos;e&apos;</span> <span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span>
+data2 <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data2<span class="token punctuation">)</span>
+<span class="token comment"># &#x4F7F;&#x7528;&#x53C2;&#x6570;&#x8BA9;json&#x6570;&#x636E;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;</span>
+<span class="token comment">#!/usr/bin/python</span>
+
+data2 <span class="token operator">=</span> json<span class="token punctuation">.</span>dumps<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&apos;a&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;Runoob&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;b&apos;</span><span class="token punctuation">:</span> <span class="token number">7</span><span class="token punctuation">}</span><span class="token punctuation">,</span> sort_keys<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> indent<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> separators<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">&apos;,&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;: &apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data2<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>loads</strong></p>
+<pre class="language-"><code class="lang-python"><span class="token comment">#!/usr/bin/python</span>
+<span class="token keyword">import</span> json
+jsonData <span class="token operator">=</span> <span class="token string">&apos;{&quot;a&quot;:1,&quot;b&quot;:2,&quot;c&quot;:3,&quot;d&quot;:4,&quot;e&quot;:5}&apos;</span><span class="token punctuation">;</span>
+text <span class="token operator">=</span> json<span class="token punctuation">.</span>loads<span class="token punctuation">(</span>jsonData<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span>
+</code></pre>
+<p>&#x8F7D;&#x5165;&#x6587;&#x4EF6;&#x7684;&#x793A;&#x4F8B;:</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;../config/record.json&quot;</span><span class="token punctuation">,</span><span class="token string">&apos;r&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> load_f<span class="token punctuation">:</span>
+    load_dict <span class="token operator">=</span> json<span class="token punctuation">.</span>load<span class="token punctuation">(</span>load_f<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>load_dict<span class="token punctuation">)</span>
+load_dict<span class="token punctuation">[</span><span class="token string">&apos;smallberg&apos;</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">8200</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">&apos;Python&apos;</span><span class="token punctuation">,</span><span class="token number">81</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token string">&apos;shirt&apos;</span><span class="token punctuation">,</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>load_dict<span class="token punctuation">)</span>
+
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&quot;../config/record.json&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;w&quot;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> dump_f<span class="token punctuation">:</span>
+    json<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>load_dict<span class="token punctuation">,</span>dump_f<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="xml"><a name="xml" class="anchor-navigation-ex-anchor" href="#xml"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. XML</h2>
+<p>&#x53C2;&#x8003;&#x4E00;&#x4E0B;&#x5409;&#x4EF2;&#x5E08;&#x5144;&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x6587;&#x4EF6;,&#x6309;&#x7167;&#x8BE5;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x5904;&#x7406;&#x548C;xml python &#x8BFB;&#x53D6;&#x60C5;&#x666F;&#x7684;&#x5B66;&#x4E60;&#x3002;</p>
+<h2 id="csv"><a name="csv" class="anchor-navigation-ex-anchor" href="#csv"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. CSV</h2>
+<p><a href="https://blog.csdn.net/katyusha1/article/details/81606175" target="_blank">python3&#xFF1A;csv&#x7684;&#x8BFB;&#x5199;_katyusha1&#x7684;&#x535A;&#x5BA2;-CSDN&#x535A;&#x5BA2;</a></p>
+<h3 id="write"><a name="write" class="anchor-navigation-ex-anchor" href="#write"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. write</h3>
+<p>&#x597D;&#x50CF;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x540E;&#x7F00;&#x8FDB;&#x884C;&#x7F16;&#x5199;&#x7684;&#x7F16;&#x7801;&#x65B9;&#x5F0F;&#x4F1A;&#x51FA;&#x73B0;&#x4E00;&#x4E9B;&#x79BB;&#x5947;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x8C03;&#x7528;&#x4EE3;&#x7801;&#x6765;&#x5199;&#x5165;<code>csv</code></p>
+<h3 id="read"><a name="read" class="anchor-navigation-ex-anchor" href="#read"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. read</h3>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x53C2;&#x6570;&#x662F; <code>quotechar</code>&#xFF1A;&#x8BF4;&#x660E;&#xFF1A;delimiter&#x662F;&#x5206;&#x9694;&#x7B26;&#xFF0C;quotechar&#x662F;&#x5F15;&#x7528;&#x7B26;&#xFF0C;&#x5F53;&#x4E00;&#x6BB5;&#x8BDD;&#x4E2D;&#x51FA;&#x73B0;&#x5206;&#x9694;&#x7B26;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7528;&#x5F15;&#x7528;&#x7B26;&#x5C06;&#x8FD9;&#x53E5;&#x8BDD;&#x62EC;&#x8D77;&#x6765;&#xFF0C;&#x5C31;&#x80FD;&#x6392;&#x9664;&#x6B67;&#x4E49;&#x3002;</p>
+<p>&#x9996;&#x5148;&#x6309;&#x7167;row&#x8FDB;&#x884C;&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x53D6;&#xFF0C;&#x8FD9;&#x5E94;&#x8BE5;&#x56DE;&#x4E8B;&#x6BD4;&#x8F83;&#x5E38;&#x89C1;&#x7684;&#x90A3;&#x79CD;&#x7C7B;&#x578B;&#x3002;</p>
+<pre class="language-"><code class="lang-python"><span class="token keyword">import</span> csv 
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">&apos;test.csv&apos;</span>&#xFF0C;newline <span class="token operator">=</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    f_csv <span class="token operator">=</span> f<span class="token punctuation">.</span>reader<span class="token punctuation">(</span>f<span class="token punctuation">,</span>delimiter<span class="token operator">=</span>default<span class="token punctuation">,</span>quotechar <span class="token operator">=</span> default<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> row <span class="token keyword">in</span> f_csv<span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span>
+<span class="token comment"># &#x8FD9;&#x79CD;&#x683C;&#x5F0F;&#x8BFB;&#x53D6;&#x51FA;&#x6765;&#x7684;&#x6570;&#x636E;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x5B58;&#x653E;&#x5BF9;&#x5E94;&#x7684;=label&#xFF0C;&#x7136;&#x540E;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#x6BCF;&#x4E00;&#x884C;&#x6570;&#x636E;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;</span>
+<span class="token comment"># &#x53EF;&#x4EE5;&#x6309;&#x7167;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53BB;&#x6839;&#x636E;index &#x7D22;&#x5F15;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;</span>
+</code></pre>
+<blockquote>
+<p>[&#x2018;class&#x2019;,&#x2018;name&#x2019;,&#x2019;sex&#x2019;,...]</p>
+<p>[&#x2018;1&#x2019;,&#x2018;xiaoming&#x2019;&#xFF0C;&#x2018;male&#x2019;,...]</p>
+<p>[&#x2018;1&#x2019;,&#x2018;xiaohong&#x2019;&#xFF0C;&#x2018;male&#x2019;,...]</p>
+</blockquote>
+<p>&#x6309;&#x7167;&#x4E0A;&#x9762;&#x7684;&#x5F88;&#x5BB9;&#x6613;&#x77E5;&#x9053;&#xFF0C;&#x53EA;&#x8BFB;&#x53D6;&#x6307;&#x5B9A;&#x7684;&#x5217;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x5373;&#x53EF;</p>
+<pre class="language-"><code class="lang-c++"><span class="token keyword">for</span> row in f_csv<span class="token operator">:</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>row<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">&#xA9; AikenHong all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-11-28 19:13:49
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Latex.html" class="navigation navigation-prev " aria-label="Previous page: 4.2 LaTex">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PyTorch.html" class="navigation navigation-next " aria-label="Next page: 5. PyTorch">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.3 Json, Xml, Csv with py","level":"3.1.5.3","depth":3,"next":{"title":"5. PyTorch","level":"3.1.6","depth":2,"path":"Langs/PyTorch.md","ref":"Langs/PyTorch.md","articles":[]},"previous":{"title":"4.2 LaTex","level":"3.1.5.2","depth":3,"path":"Langs/Latex.md","ref":"Langs/Latex.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-summary","-katex","mathjax-pro","anchor-navigation-ex-toc","search-plus","-lunr","-search","splitter","copy-code-button","github","theme-comscore","-latex-codecogs","tbfed-pagefooter","-expandable-chapters-small","-edit-link-plus","expandable-chapters","pageview-count","-editlink","lightbox","-highlight","prism","prism-themes","disqus","ga","insert-logo","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"&copy AikenHong","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"shell":"bash","c++":"cpp","dockerfile":"docker","ini":"vim"}},"disqus":{"useIdentifier":false,"shortName":"aikensdoc"},"github":{"url":"https://aikenh.github.io/about/"},"livereload":{},"splitter":{},"anchor-navigation-ex-toc":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"pageview-count":{},"prism-themes":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"copy-code-button":{},"ga":{"configuration":"auto","token":"UA-208961382-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 100px; min-height: 30px","url":"https://gitee.com/Aiken97/markdown-image/raw/master/3070imgs/20211124143034.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"AikenHong","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Aiken's Blogs","language":"en","gitbook":"*"},"file":{"path":"Langs/Markup_Langs.md","mtime":"2021-11-28T11:13:49.376Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-01-19T12:20:50.008Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
